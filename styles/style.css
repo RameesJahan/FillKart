@@ -94,6 +94,7 @@ body{
   justify-content: center;
 }
 .fab-cart{
+  background-color: var(--primary-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,19 +121,28 @@ body{
   transform: translate(26px,-26px);
 }
 
+.main-body{
+  margin: 12px;
+  margin-bottom: 80px;
+}
 
 .pro-list-item-list{
   display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: y mandatory;
 }
 
 .pro-card{
   margin: 12px;
   width: 180px;
+  min-width: 180px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 .pro-card-img{
   width: 180px;
