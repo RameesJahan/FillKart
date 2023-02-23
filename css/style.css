@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&display=swap');
+
+:root{
+  --primary-white: #fefeff;
+  --primary-black: #1F1F1F;
+  --primary-color: #00a1f7;
+  --secondary-white: #f4fcff;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+}
+body{
+  background-color: var(--primary-white);
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}
+.flex{
+  display: flex;
+}
+
+.header{
+  padding-bottom: 12px;
+  /*box-shadow: 0px 8px 14px 3px rgba(0,0,0,0.1);*/
+  border-bottom: 1px solid var(--primary-black);
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-title{
+  color: var(--primary-color);
+  font-weight: 700;
+  margin: 12px;
+}
+
+.nav-profile-avatar{
+  margin: 12px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--primary-black);
+  border-radius: 22px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.search-container{
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.search-box{
+  background-color: var(--secondary-white);
+  margin: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--primary-black);
+  /*box-shadow: 0 3px 12px 4px #c6c6c6;*/
+}
+
+.ipt-search{
+  background: none;
+  border:none;
+  padding: 5px;
+  flex: 1;
+}
+.ipt-search:hover,
+.ipt-search:focus{
+  outline: none;
+}
+
+.fab-container{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.fab-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  padding: 18px;
+  border: 1px solid var(--primary-black);
+  border-radius: 50%;
+}
+.img-cart{
+  width: 32px;
+  height: 32px;
+}
+
+.cart-badge{
+  background-color: var(--secondary-white);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  min-width: 32px;
+  border: 1px solid var(--primary-black);
+  border-radius: 16px;
+  transform: translate(26px,-26px);
+}
