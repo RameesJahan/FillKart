@@ -25,6 +25,10 @@ body{
   display: flex;
 }
 
+.border-line{
+  border: 1px solid var(--primary-black);
+}
+
 .header{
   padding-bottom: 12px;
   /*box-shadow: 0px 8px 14px 3px rgba(0,0,0,0.1);*/
@@ -114,4 +118,40 @@ body{
   border: 1px solid var(--primary-black);
   border-radius: 16px;
   transform: translate(26px,-26px);
+}
+
+
+.pro-list-item-list{
+  display: flex;
+}
+
+.pro-card{
+  margin: 12px;
+  width: 180px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.pro-card-img{
+  width: 180px;
+  height: 180px;
+  margin: 0;
+}
+.pro-card-name{
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.pro-card-brand{
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.pro-card-price{
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 5px;
+  margin-top: 0;
 }
