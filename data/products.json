@@ -1,0 +1,18 @@
+[
+  {
+    "id": "P100",
+    "img": "./images/shirt_1.jpg",
+    "name": "Men T Shirt Cross Neck",
+    "brand": "Levis",
+    "price": 599,
+    "category": "Mens"
+  },
+  {
+    "id": "P101",
+    "img": "./images/shirt_2.jpg",
+    "name": "Kids Full Sleeve",
+    "brand": "Nike",
+    "price": 399,
+    "category": "Kids"
+  }
+]
