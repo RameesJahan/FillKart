@@ -4,7 +4,7 @@ var products;
 /*Function to load products
 =========================================*/
 // Call the getJsonData function and log the JSON data to the console
-getJsonData("../data/products.json")
+getJsonData("./data/products.json")
   .then((data) => {
     console.log(data);
     products = data;
@@ -75,4 +75,3 @@ const loadProData = (i) => {
   });
   document.getElementById("pro_item_list_" + i).innerHTML = proList;
 };
-
