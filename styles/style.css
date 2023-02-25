@@ -293,18 +293,66 @@ a{
 /*Style to Profile Page
 =========================================*/
 
-.prof-container,
-.prof-user-name-container{
+.prof-container{
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid var(--primary-black);
 }
-.prof-user-img{
+
+.prof-user-img-container{
+  position: relative;
   margin: 8px;
+}
+
+.prof-user-img{
   height: 100px;
   width: 100px;
   background-size: cover;
 }
 
-.prof-user-name-container{
+.prof-user-img-edt{
+  background: var(--primary-lightBlue);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+}
+
+.prof-user-details{
+  width: 100%;
   margin: 8px;
+}
+
+.prof-user-name-container{
+  display: flex;
+  width: 100%;
+}
+
+.prof-user-name{
+  max-width: 100%;
+  border: none;
+  padding: 0;
+  transition: 300ms;
+  white-space: nowrap;
+  overflow: ellipsis;
+  margin-right: 4px;
+}
+
+.prof-user-name-edt{
+  flex-shrink: 1;
+}
+
+.prof-user-name:focus{
+  outline: none;
+}
+
+.prof-user-name.editable{
+  border-bottom: 2px solid var(--primary-black);
+}
+
+.prof-user-email{
+  font-size: 12px;
 }

@@ -63,9 +63,9 @@ const loadProData = (i) => {
   result.forEach((item) => {
     let proTemp = `<a href="./pages/product.html?id=${item.id}">
                       <div class="pro-card border-line">
-                        <img class="pro-card-img" src="${
+                        <img class="pro-card-img lazy-image" src="${
                           item.img
-                        }" alt="Product Image" />
+                        }" alt="${item.name}" />
                         <span class="pro-card-name">${item.name}</span>
                         <span class="pro-card-brand">${item.brand}</span>
                         <span class="pro-card-price">₹${item.price}</span>

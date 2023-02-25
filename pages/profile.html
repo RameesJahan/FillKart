@@ -23,25 +23,34 @@
   <body>
     <div class="container">
       <div class="prof-container">
-        <img
-          class="prof-user-img border-line"
-          src="../images/img_avatar.png"
-          alt="Profile Pic"
-        />
-        <div>
-          <div class="prof-user-name-container">
-            <input
-              type="text"
-              class="prof-user-name col"
-              name="prof-user-name"
-              id="prof-user-name"
-              value="User Name"
-            />
-            <img
-              id="name-edit"
-              class="prof-user-name-edt icon col"
+        <div class="prof-user-img-container">
+          <img
+            class="prof-user-img border-line"
+            src="../images/img_avatar.png"
+            alt="Profile Pic"
+          />
+          <img
+              id="img-edit"
+              class="prof-user-img-edt border-line"
               src="../icons/ic_edit.png"
               alt="Icon Edit"
+            />
+        </div>
+        <div class="prof-user-details">
+          <div class="prof-user-name-container">
+            <span
+              class="prof-user-name"
+              name="prof-user-name"
+              id="prof-user-name"
+              contenteditable="false"
+            >User Name</span>
+            <img
+              id="name-edit"
+              class="prof-user-name-edt icon"
+              src="../icons/ic_edit.png"
+              alt="Icon Edit"
+              onclick="editName()"
+              onfocus="this.value = this.value;"
             />
           </div>
           <span class="prof-user-email">user@example.com</span>
@@ -56,7 +65,12 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="./scripts/utils.js"
+      src="../scripts/utils.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../scripts/profile.js"
       type="text/javascript"
       charset="utf-8"
     ></script>
