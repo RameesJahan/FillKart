@@ -25,13 +25,18 @@
       <div onclick="goBack()" class="g-back border-line">
         <img class="icon-g-back icon" src="../icons/ic_back.png" alt="" />
       </div>
-      <div class="body-product">
+      <div class="row body-product ">
+        <div class="col-sm-6">
+          
         <img
           id="product-img"
           class="product-img img-fluid mx-auto"
           src=""
           alt="Product Image"
         />
+        </div>
+        <div class="col-sm-6">
+          
         <div id="product-name" class="product-name"></div>
         <div id="product-price" class="product-price"></div>
         <div id="product-disc" class="product-disc" >
@@ -48,6 +53,7 @@
           cconsectetur
         </div>
         <div id="product-brand" class="product-brand"></div>
+        </div>
         <div id="product-review" class="product-review"></div>
       </div>
 
@@ -57,6 +63,11 @@
           <div class="product-btn-buy col border-line">Buy Now</div>
         </div>
       </div>
+    </div>
+    
+    <div id="pro-not-found" class="pro-not-found">
+      <h1>Product Not Found</h1>
+      <a class="border-line" href="javascript:history.back()">Go Back</a>
     </div>
 
     <!--Scripts-->

@@ -22,12 +22,17 @@ loadData = () => {
   let id = queryString.get("id");
   
   const product = products.find((p) => p.id === id);
+  if(!product){
+    document.getElementById('pro-not-found').classList.add('show');
+    document.title = "Product Not Found";
+    return;
+  }
 
   
   document.title = product.name;
   document.getElementById("product-name").innerHTML = product.name;
   document.getElementById("product-price").innerHTML = "₹" + product.price;
-  //document.getElementById("product-disc").innerHTML = product.disc;
+  document.getElementById("product-disc").innerHTML = product.disc;
   document.getElementById("product-brand").innerHTML = product.brand;
   //document.getElementById("product-review").innerHTML = product.review;
   document.getElementById("product-img").src = "." + product.img;

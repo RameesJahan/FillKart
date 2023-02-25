@@ -1,4 +1,4 @@
-const categories = ["Mens", "Womens", "Kids"];
+const categories = [ "Laptops" ,"Phones","Accessories","Mens", "Womens", "Kids" ,];
 var products;
 
 /*Function to load products
@@ -75,3 +75,9 @@ const loadProData = (i) => {
   });
   document.getElementById("pro_item_list_" + i).innerHTML = proList;
 };
+
+/*Function to go To Profile page
+=========================================*/
+const goToUser = () => {
+  window.location.href = "./pages/profile.html";
+}

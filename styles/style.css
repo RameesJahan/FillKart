@@ -196,7 +196,6 @@ a{
 }
 
 .body-product{
-  display: block;
   margin-bottom: 90px;
   box-sizing: border-box;
   position: relative;
@@ -267,3 +266,45 @@ a{
   background-color: var(--primary-color);
 }
 
+.pro-not-found{
+  background: var(--primary-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+.pro-not-found a{
+  margin: 12px;
+  padding: 8px;
+  color: var(--primary-color);
+  border-radius: 8px;
+}
+
+.pro-not-found.show{
+  display: flex;
+}
+
+/*Style to Profile Page
+=========================================*/
+
+.prof-container,
+.prof-user-name-container{
+  display: flex;
+  flex-direction: row;
+}
+.prof-user-img{
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+}
+
+.prof-user-name-container{
+  margin: 8px;
+}

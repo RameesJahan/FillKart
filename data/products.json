@@ -1,18 +1,461 @@
 [
   {
     "id": "P100",
-    "img": "./images/shirt_1.jpg",
-    "name": "Men T Shirt Cross Neck",
-    "brand": "Levis",
-    "price": 599,
-    "category": "Mens"
+    "img": "./images/img_P100.jpg",
+    "name": "Lenovo Ideapad Slim 3i",
+    "brand": "Lenovo",
+    "price": 42999,
+    "category": "Laptops",
+    "disc": "The Lenovo Ideapad Slim 3i laptop features a 15.6-inch Full HD display and is powered by a 10th Gen Intel Core i5 processor. It comes with 8GB DDR4 RAM and a  HDD, making it a great option for everyday use and light gaming."
   },
   {
     "id": "P101",
-    "img": "./images/shirt_2.jpg",
-    "name": "Kids Full Sleeve",
+    "img": "./images/img_P101.jpg",
+    "name": "Samsung Galaxy A52s 5G",
+    "brand": "Samsung",
+    "price": 35999,
+    "category": "Phones",
+    "disc": "The Samsung Galaxy A52s 5G smartphone comes with a 6.5-inch Full HD+ Super AMOLED display and is powered by a Snapdragon 778G processor. It features a 64MP quad-camera setup and a 32MP front-facing camera for selfies. The phone also has a 4500mAh battery and supports 25W fast charging."
+  },
+  {
+    "id": "P102",
+    "img": "./images/img_P102.jpg",
+    "name": "JBL T460BT Extra Bass Wireless Headphones",
+    "brand": "JBL",
+    "price": 3199,
+    "category": "Accessories",
+    "disc": "The JBL T460BT Extra Bass Wireless Headphones come with powerful 32mm drivers that deliver deep and powerful bass. They are wireless and connect easily to your smartphone via Bluetooth. The headphones have a built-in microphone and offer up to 11 hours of battery life."
+  },
+  {
+    "id": "P103",
+    "img": "./images/img_P103.jpg",
+    "name": "HP 14s-dq2535TU",
+    "brand": "HP",
+    "price": 40990,
+    "category": "Laptops",
+    "disc": "The HP 14s-dq2535TU laptop features a 14-inch Full HD display and is powered by a 11th Gen Intel Core i3 processor. It comes with 8GB DDR4 RAM and a 512GB SSD, making it a great option for everyday use and light gaming."
+  },
+  {
+    "id": "P104",
+    "img": "./images/img_P104.jpg",
+    "name": "OnePlus Nord CE 5G",
+    "brand": "OnePlus",
+    "price": 22999,
+    "category": "Phones",
+    "disc": "The OnePlus Nord CE 5G smartphone features a 6.43-inch Full HD+ AMOLED display and is powered by a Snapdragon 750G processor. It features a triple-camera setup with a 64MP primary sensor and a 16MP front-facing camera for selfies. The phone also has a 4500mAh battery and supports Warp Charge 30T fast charging."
+  },
+  {
+    "id": "P105",
+    "img": "./images/img_P105.jpg",
+    "name": "Sony WF-1000XM4 Noise Cancelling Truly Wireless Earbuds",
+    "brand": "Sony",
+    "price": 24990,
+    "category": "Accessories",
+    "disc": "Experience the ultimate in sound quality with the Sony WF-1000XM4 noise-cancelling truly wireless earbuds. These earbuds offer industry-leading noise cancellation technology, so you can listen to your music, podcasts, or audiobooks without any distractions. They're also equipped with a powerful battery that provides up to 24 hours of listening time, and they're designed to be comfortable enough to wear all day long. With easy touch controls and a range of customizable features, these earbuds are the perfect choice for anyone who loves great sound on the go."
+  },
+  {
+    "id": "P106",
+    "img": "./images/img_P106.jpg",
+    "name": "Women's Printed Shirt Dress",
+    "brand": "Zara",
+    "price": 2999,
+    "category": "Womens",
+    "disc": "This women's shirt dress from Zara features a vibrant print and is made from a lightweight and flowy fabric that makes it comfortable to wear all day long. It has a relaxed fit and comes with a matching belt to cinch in the waist. The dress is perfect for casual outings or can be dressed up for more formal occasions."
+  },
+  {
+    "id": "P107",
+    "img": "./images/img_P107.jpg",
+    "name": "Dell Inspiron 3505",
+    "brand": "Dell",
+    "price": 33990,
+    "category": "Laptops",
+    "disc": "The Dell Inspiron 3505 laptop features a 15.6-inch HD display and is powered by an AMD Ryzen 3 processor. It comes with 4GB DDR4 RAM and a 256GB SSD, making it a good option for basic tasks like browsing the web, checking email, or streaming videos."
+  },
+  {
+    "id": "P108",
+    "img": "./images/img_P108.jpg",
+    "name": "Xiaomi Redmi Note 10 Pro",
+    "brand": "Xiaomi",
+    "price": 17999,
+    "category": "Phones",
+    "disc": "The Xiaomi Redmi Note 10 Pro smartphone features a 6.67-inch Full HD+ AMOLED display and is powered by a Snapdragon 732G processor. It features a quad-camera setup with a 64MP primary sensor and a 16MP front-facing camera for selfies. The phone also has a 5020mAh battery and supports 33W fast charging."
+  },
+  {
+    "id": "P109",
+    "img": "./images/img_P109.jpg",
+    "name": "SanDisk Extreme Pro 128GB SDXC UHS-I Card",
+    "brand": "SanDisk",
+    "price": 3599,
+    "category": "Accessories",
+    "disc": "The SanDisk Extreme Pro 128GB SDXC UHS-I card is designed for professional photographers and videographers who need to store large amounts of high-quality data. It has read speeds of up to 170MB/s and write speeds of up to 90MB/s, making it ideal for shooting 4K videos or capturing burst-mode photos."
+  },
+  {
+    "id": "P110",
+    "img": "./images/img_P110.jpg",
+    "name": "Men's Slim Fit Chinos",
+    "brand": "H&M",
+    "price": 1999,
+    "category": "Mens",
+    "disc": "These men's slim fit chinos from H&M are made from a cotton blend fabric that is soft and comfortable to wear. They have a mid-rise waist and a slim leg that tapers towards the ankle. The chinos come in a range of colors and are perfect for both casual and formal occasions."
+  },
+  {
+    "id": "P111",
+    "img": "./images/img_P111.jpg",
+    "name": "ASUS VivoBook 14 X415JA",
+    "brand": "ASUS",
+    "price": 40990,
+    "category": "Laptops",
+    "disc": "The ASUS VivoBook 14 X415JA laptop features a 14-inch Full HD display and is powered by a 10th Gen Intel Core i3 processor. It comes with 4GB DDR4 RAM and a 256GB SSD, making it a good option for daily computing tasks. The laptop also has a fingerprint sensor for easy and secure login, and a backlit keyboard for comfortable typing in low-light conditions."
+  },
+  {
+    "id": "P112",
+    "img": "./images/img_P112.jpg",
+    "name": "Samsung Galaxy A52s 5G",
+    "brand": "Samsung",
+    "price": 35999,
+    "category": "Phones",
+    "disc": "The Samsung Galaxy A52s 5G smartphone features a 6.5-inch Full HD+ Super AMOLED display and is powered by a Snapdragon 778G processor. It features a quad-camera setup with a 64MP primary sensor and a 32MP front-facing camera for selfies. The phone also has a 4500mAh battery and supports 25W fast charging."
+  },
+  {
+    "id": "P113",
+    "img": "./images/img_P113.jpg",
+    "name": "Apple AirPods Pro",
+    "brand": "Apple",
+    "price": 24990,
+    "category": "Accessories",
+    "disc": "The Apple AirPods Pro are wireless earbuds that feature active noise cancellation and transparency mode, which lets you hear your surroundings. They are also sweat and water-resistant, making them perfect for workouts. The AirPods Pro come with a wireless charging case and offer up to 4.5 hours of listening time on a single charge."
+  },
+  {
+    "id": "P114",
+    "img": "./images/img_P114.jpg",
+    "name": "Women's High Waisted Jeans",
+    "brand": "Levi's",
+    "price": 3999,
+    "category": "Womens",
+    "disc": "These women's high waisted jeans from Levi's are made from a stretchy denim fabric that is both comfortable and flattering. They have a skinny fit and a high-rise waist that sits above the belly button. The jeans come in a range of colors and are perfect for both casual and dressy occasions."
+  },
+  {
+    "id": "P115",
+    "img": "./images/img_P115.jpg",
+    "name": "HP Pavilion Gaming 15-ec1024AX",
+    "brand": "HP",
+    "price": 72990,
+    "category": "Laptops",
+    "disc": "The HP Pavilion Gaming 15-ec1024AX laptop features a 15.6-inch Full HD display and is powered by an AMD Ryzen 5 processor. It comes with 8GB DDR4 RAM and a 512GB SSD, making it a good option for gaming and other resource-intensive tasks. The laptop also has a backlit keyboard and dual speakers with B&O audio for immersive gaming experience."
+  },
+  {
+    "id": "P116",
+    "img": "./images/img_P116.jpg",
+    "name": "Google Pixel 6",
+    "brand": "Google",
+    "price": 59999,
+    "category": "Phones",
+    "disc": "The Google Pixel 6 smartphone features a 6.4-inch Full HD+ AMOLED display and is powered by a Google Tensor processor. It features a dual-camera setup with a 50MP primary sensor and a 8MP front-facing camera for selfies. The phone also has a 4614mAh battery and supports 30W fast charging."
+  },
+  {
+    "id": "P117",
+    "img": "./images/img_P117.jpg",
+    "name": "Fitbit Versa 3",
+    "brand": "Fitbit",
+    "price": 19990,
+    "category": "Accessories",
+    "disc": "The Fitbit Versa 3 is a smartwatch that tracks your activity, heart rate, and sleep. It also has built-in GPS and supports voice commands via Amazon Alexa or Google Assistant. The watch comes with a variety of watch faces and interchangeable bands to suit your style. It offers up to 6 days of battery life on a single charge."
+  },
+  {
+    "id": "P118",
+    "img": "./images/img_P118.jpg",
+    "name": "Men's Slim Fit T-Shirt",
+    "brand": "H&M",
+    "price": 799,
+    "category": "Mens",
+    "disc": "This men's slim fit t-shirt from H&M is made from soft, stretchy cotton fabric that is both comfortable and breathable. It has a classic crew neck and short sleeves, and comes in a range of colors to suit your style. The t-shirt is perfect for layering or wearing on its own."
+  },
+  {
+    "id": "P119",
+    "img": "./images/img_P119.jpg",
+    "name": "Dell Inspiron 15 5510",
+    "brand": "Dell",
+    "price": 79990,
+    "category": "Laptops",
+    "disc": "The Dell Inspiron 15 5510 laptop features a 15.6-inch Full HD display and is powered by an 11th Generation Intel Core i5 processor. It comes with 8GB DDR4 RAM and a 512GB SSD, making it a good option for productivity and multitasking. The laptop also has a backlit keyboard and a built-in fingerprint reader for secure login."
+  },
+  {
+    "id": "P120",
+    "img": "./images/img_P120.jpg",
+    "name": "OnePlus Nord 2 5G",
+    "brand": "OnePlus",
+    "price": 29999,
+    "category": "Phones",
+    "disc": "The OnePlus Nord 2 5G smartphone features a 6.43-inch Full HD+ AMOLED display and is powered by a MediaTek Dimensity 1200-AI processor. It features a triple-camera setup with a 50MP primary sensor and a 32MP front-facing camera for selfies. The phone also has a 4500mAh battery and supports Warp Charge 65 fast charging."
+  },
+  {
+    "id": "P121",
+    "img": "./images/img_P121.jpg",
+    "name": "Men's Denim Jacket",
+    "brand": "Levi's",
+    "price": 5999,
+    "category": "Mens",
+    "disc": "This Levi's denim jacket is a classic addition to any men's wardrobe. It is made from high-quality denim and features a button-front design with two chest pockets. The jacket has a slim fit and is perfect for layering over a t-shirt or sweater."
+  },
+  {
+    "id": "P122",
+    "img": "./images/img_P122.jpg",
+    "name": "Women's High Waisted Jeans",
+    "brand": "Wrangler",
+    "price": 3499,
+    "category": "Womens",
+    "disc": "These high waisted jeans from Wrangler are a must-have for any woman's wardrobe. They are made from high-quality denim and feature a skinny fit with a flattering high waist. The jeans come in a range of colors to suit your style."
+  },
+  {
+    "id": "P123",
+    "img": "./images/img_P123.jpg",
+    "name": "Kids' Hooded Sweatshirt",
+    "brand": "Adidas",
+    "price": 1499,
+    "category": "Kids",
+    "disc": "This kids' hooded sweatshirt from Adidas is perfect for keeping your child warm and cozy on chilly days. It is made from soft and comfortable fabric and features a hood and a front kangaroo pocket. The sweatshirt comes in a range of colors to suit your child's style."
+  },
+  {
+    "id": "P124",
+    "img": "./images/img_P124.jpg",
+    "name": "Men's Polo T-Shirt",
+    "brand": "Ralph Lauren",
+    "price": 2999,
+    "category": "Mens",
+    "disc": "This men's polo t-shirt from Ralph Lauren is a classic addition to any men's wardrobe. It is made from high-quality cotton and features a button-front design with a collar. The t-shirt has a slim fit and is perfect for dressing up or down."
+  },
+  {
+    "id": "P125",
+    "img": "./images/img_P125.jpg",
+    "name": "Women's Knee Length Skirt",
+    "brand": "Zara",
+    "price": 2499,
+    "category": "Womens",
+    "disc": "This knee-length skirt from Zara is a versatile piece that can be dressed up or down. It is made from lightweight fabric and features a flattering A-line silhouette. The skirt comes in a range of colors and prints to suit your style."
+  },
+  {
+    "id": "P126",
+    "img": "./images/img_P126.jpg",
+    "name": "Kids' Denim Shorts",
+    "brand": "H&M",
+    "price": 999,
+    "category": "Kids",
+    "disc": "These kids' denim shorts from H&M are perfect for keeping your child cool and comfortable on hot summer days. They are made from high-quality denim and feature a classic five-pocket design. The shorts come in a range of washes and styles to suit your child's style."
+  },
+  {
+    "id": "P127",
+    "img": "./images/img_P127.jpg",
+    "name": "Men's Casual Shoes",
     "brand": "Nike",
-    "price": 399,
-    "category": "Kids"
+    "price": 2799,
+    "category": "Mens",
+    "disc": "Get ready for any adventure with these stylish and comfortable casual shoes from Nike. The sleek design and durable construction make them a great choice for everyday wear, while the cushioned sole ensures maximum comfort. Whether you're exploring the city or heading to the gym, these shoes will keep you looking and feeling your best."
+  },
+  {
+    "id": "P128",
+    "img": "./images/img_P128.jpg",
+    "name": "Women's Black Leather Jacket",
+    "brand": "Zara",
+    "price": 6999,
+    "category": "Womens",
+    "disc": "Add a touch of sophistication to your wardrobe with this stunning black leather jacket from Zara. The high-quality leather and sleek design make it a versatile piece that can be dressed up or down. The jacket features a comfortable lining and multiple pockets, making it practical as well as stylish. Whether you're heading to work or out for a night on the town, this jacket is sure to turn heads."
+  },
+  {
+    "id": "P129",
+    "img": "./images/img_P129.jpg",
+    "name": "Kids Hoodie Sweatshirt",
+    "brand": "Adidas",
+    "price": 2499,
+    "category": "Kids",
+    "disc": "This Adidas hoodie sweatshirt is perfect for kids who want to stay warm and stylish during the colder months. The sweatshirt is made from high-quality cotton and features a drawstring hood, kangaroo pockets, and ribbed cuffs and hem. The iconic Adidas logo is embroidered on the front."
+  },
+  {
+    "id": "P130",
+    "img": "./images/img_P130.jpg",
+    "name": "Women's Trench Coat",
+    "brand": "Burberry",
+    "price": 23999,
+    "category": "Womens",
+    "disc": "This Burberry trench coat is a timeless piece that will elevate any woman's wardrobe. It is made from high-quality cotton and features classic trench coat details such as epaulettes, a storm flap, and a double-breasted front. The coat has a slim fit and comes with a belt to cinch in the waist."
+  },
+  {
+    "id": "P131",
+    "img": "./images/img_P131.jpg",
+    "name": "Men's Leather Boots",
+    "brand": "Red Wing",
+    "price": 14999,
+    "category": "Mens",
+    "disc": "These Red Wing leather boots are a must-have for any man who values style and durability. The boots are made from high-quality leather and feature a lace-up design with a round toe and a rugged outsole. They are perfect for wearing with jeans or chinos."
+  },
+  {
+    "id": "P132",
+    "img": "./images/img_P132.jpg",
+    "name": "Leather Crossbody Bag",
+    "brand": "Coach",
+    "price": 8999,
+    "category": "Accessories",
+    "disc": "This Coach leather crossbody bag is perfect for women who want to keep their essentials close at hand while on the go. The bag is made from high-quality leather and features a zip-top closure, an adjustable strap, and multiple interior pockets. The iconic Coach logo is embossed on the front."
+  },
+  {
+    "id": "P133",
+    "img": "./images/img_P133.jpg",
+    "name": "Women's Midi Dress",
+    "brand": "Diane von Furstenberg",
+    "price": 8999,
+    "category": "Womens",
+    "disc": "This Diane von Furstenberg midi dress is a stylish and versatile piece that can be dressed up or down. The dress is made from high-quality silk and features a wrap design with a V-neckline and long sleeves. The signature DVF print adds a pop of color to the dress."
+  },
+  {
+    "id": "P134",
+    "img": "./images/img_P134.jpg",
+    "name": "Kids Denim Jeans",
+    "brand": "Gap",
+    "price": 1499,
+    "category": "Kids",
+    "disc": "These Gap kids denim jeans are a classic addition to any child's wardrobe. The jeans are made from high-quality denim and feature a slim fit with a button and zip-fly closure. They are perfect for wearing with a t-shirt or sweater."
+  },
+  {
+    "id": "P135",
+    "img": "./images/img_P135.jpg",
+    "name": "Men's Leather Shoes",
+    "brand": "Clarks",
+    "price": 3999,
+    "category": "Mens",
+    "disc": "Step out in style with these sleek leather shoes from Clarks. With a comfortable fit and classic design, these shoes are perfect for any occasion. The high-quality leather ensures durability, while the soft lining provides extra comfort. Pair them with jeans or dress pants for a polished look."
+  },
+  {
+    "id": "P136",
+    "img": "./images/img_P136.jpg",
+    "name": "Leather Wallet",
+    "brand": "Montblanc",
+    "price": 6999,
+    "category": "Accessories",
+    "disc": "This Montblanc leather wallet is a luxurious accessory for men who value quality and style. The wallet is made from high-quality leather and features multiple card slots, a bill compartment, and a coin pocket. The iconic Montblanc emblem is embossed on the front."
+  },
+  {
+    "id": "P137",
+    "img": "./images/img_P137.jpg",
+    "name": "Women's Leather Jacket",
+    "brand": "Acne Studios",
+    "price": 39999,
+    "category": "Womens",
+    "disc": "This Acne Studios leather jacket is a statement piece that will elevate any woman's wardrobe. The jacket is made from high-quality leather and features a biker-style design with silver hardware and a belted waist. It has a slim fit and is perfect for wearing with jeans or a dress."
+  },
+  {
+    "id": "P138",
+    "img": "./images/img_P138.jpg",
+    "name": "Men's Leather Jacket",
+    "brand": "Schott NYC",
+    "price": 24999,
+    "category": "Mens",
+    "disc": "This Schott NYC leather jacket is a classic piece that will never go out of style. The jacket is made from high-quality leather and features a bomber-style design with a ribbed collar, cuffs, and hem. It has a slim fit and is perfect for wearing with jeans or chinos."
+  },
+  {
+    "id": "P139",
+    "img": "./images/img_P139.jpg",
+    "name": "Kids Polo T-Shirt",
+    "brand": "Ralph Lauren",
+    "price": 1599,
+    "category": "Kids",
+    "disc": "This Ralph Lauren polo t-shirt is a classic piece that will never go out of style. The t-shirt is made from high-quality cotton and features the iconic polo player logo on the chest. It has a regular fit and is perfect for wearing with jeans or shorts."
+  },
+  {
+    "id": "P140",
+    "img": "./images/img_P140.jpg",
+    "name": "Leather Watch",
+    "brand": "Fossil",
+    "price": 8999,
+    "category": "Accessories",
+    "disc": "This Fossil leather watch is a stylish accessory for men who value quality and functionality. The watch is made from high-quality leather and features a chronograph function, date display, and water resistance up to 50 meters. The watch has a classic design and is perfect for wearing with both casual and formal outfits."
+  },
+  {
+    "id": "P141",
+    "img": "./images/img_P141.jpg",
+    "name": "Women's Blouse",
+    "brand": "Chloe",
+    "price": 14999,
+    "category": "Womens",
+    "disc": "This Chloe blouse is a feminine and elegant piece that will elevate any woman's wardrobe. The blouse is made from high-quality silk and features a ruffled collar, long sleeves, and a button-front closure. The blouse has a relaxed fit and is perfect for wearing with jeans or a skirt."
+  },
+  {
+    "id": "P142",
+    "img": "./images/img_P142.jpg",
+    "name": "Men's Formal Shirt",
+    "brand": "Louis Philippe",
+    "price": 2599,
+    "category": "Mens",
+    "disc": "Look sharp and sophisticated in this classic formal shirt from Louis Philippe. Made from high-quality cotton, this shirt features a slim fit design that will enhance your silhouette. The shirt comes in a timeless white color that can be paired with a range of formal trousers or suits. Whether you're attending a business meeting or a special occasion, this shirt is sure to make you stand out from the crowd."
+  },
+  {
+    "id": "P143",
+    "img": "./images/img_P143.jpg",
+    "name": "Women's Leather Boots",
+    "brand": "Stuart Weitzman",
+    "price": 19999,
+    "category": "Womens",
+    "disc": "These Stuart Weitzman leather boots are a must-have for any fashion-forward woman. The boots are made from high-quality leather and feature a knee-high design with a pointed toe and a stiletto heel. They have a slim fit and are perfect for wearing with dresses or skinny jeans."
+  },
+  {
+    "id": "P144",
+    "img": "./images/img_P144.jpg",
+    "name": "Kids Hoodie",
+    "brand": "Adidas",
+    "price": 1999,
+    "category": "Kids",
+    "disc": "This Adidas hoodie is a comfortable and stylish piece that any kid will love. The hoodie is made from high-quality cotton and features the iconic Adidas logo on the chest. It has a regular fit and is perfect for wearing with jeans or sweatpants."
+  },
+  {
+    "id": "P145",
+    "img": "./images/img_P145.jpg",
+    "name": "Leather Belt",
+    "brand": "Hermes",
+    "price": 29999,
+    "category": "Accessories",
+    "disc": "This Hermes leather belt is a luxurious accessory for men who value quality and style. The belt is made from high-quality leather and features the iconic Hermes H buckle in silver-tone metal. It has an adjustable length and is perfect for wearing with both casual and formal outfits."
+  },
+  {
+    "id": "P146",
+    "img": "./images/img_P146.jpg",
+    "name": "Women's Maxi Dress",
+    "brand": "Gucci",
+    "price": 69999,
+    "category": "Womens",
+    "disc": "This Gucci maxi dress is a show-stopping piece that will turn heads wherever you go. The dress is made from high-quality silk and features a bold floral print with ruffle details and a tie waist. It has a flowing fit and is perfect for wearing to a special occasion or event."
+  },
+  {
+    "id": "P147",
+    "img": "./images/img_P147.jpg",
+    "name": "Men's Dress Shoes",
+    "brand": "Allen Edmonds",
+    "price": 7999,
+    "category": "Mens",
+    "disc": "These Allen Edmonds dress shoes are a classic and timeless choice for any formal occasion. The shoes are made from high-quality leather and feature a cap toe design with a lace-up closure. They have a sleek and polished look and are perfect for wearing with a suit or dress pants."
+  },
+  {
+    "id": "P148",
+    "img": "./images/img_P148.jpg",
+    "name": "Kids Denim Jacket",
+    "brand": "Levi's",
+    "price": 2499,
+    "category": "Kids",
+    "disc": "This Levi's denim jacket is a stylish and practical piece for any kid's wardrobe. The jacket is made from high-quality denim and features a classic design with a button-front closure and multiple pockets. It has a regular fit and is perfect for layering over a t-shirt or hoodie."
+  },
+  {
+    "id": "P149",
+    "img": "./images/img_P149.jpg",
+    "name": "Leather Backpack",
+    "brand": "Tumi",
+    "price": 7499,
+    "category": "Accessories",
+    "disc": "The Tumi leather backpack is perfect for both work and play. Made from high-quality materials, this backpack is built to last and provides ample space for your daily essentials. The sleek design and comfortable straps make it a great choice for any occasion."
+  },
+  {
+    "id": "P150",
+    "img": "./images/img_P150.jpg",
+    "name": "Wireless Earbuds",
+    "brand": "Sony",
+    "price": 2499,
+    "category": "Accessories",
+    "disc": "Experience high-quality sound with these wireless earbuds from Sony. With a sleek design and comfortable fit, these earbuds are perfect for on-the-go listening. With long battery life and easy-to-use controls, you can enjoy your favorite music for hours on end."
   }
 ]
