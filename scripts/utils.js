@@ -25,3 +25,18 @@ const encode = (str) => {
 function goBack() {
   window.history.back();
 }
+
+function validatePassword(password) {
+  const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+  return regex.test(password);
+}
+
+function validateName(name) {
+  if (!name) {
+    return false;
+  }
+  if (!/^[a-zA-Z]+$/.test(name)) {
+    return false;
+  }
+  return true;
+}

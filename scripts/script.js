@@ -14,29 +14,6 @@ getJsonData("./data/products.json")
     console.error(error);
   });
 
-/*lazy load Images
-=========================================*/
-
-let images = [...document.querySelectorAll(".lazy-image")];
-
-const interactSettings = {
-  root: document.querySelector(".center"),
-  rootMargin: "0px 0px 200px 0px",
-};
-
-function onIntersection(imageEntites) {
-  imageEntites.forEach((image) => {
-    if (image.isIntersecting) {
-      observer.unobserve(image.target);
-      image.target.src = image.target.dataset.src;
-      image.target.onload = () => image.target.classList.add("loaded");
-    }
-  });
-}
-
-let observer = new IntersectionObserver(onIntersection, interactSettings);
-
-images.forEach((image) => observer.observe(image));
 
 /*Function to Create Catagory List
 =========================================*/
@@ -63,9 +40,9 @@ const loadProData = (i) => {
   result.forEach((item) => {
     let proTemp = `<a href="./pages/product.html?id=${item.id}">
                       <div class="pro-card border-line">
-                        <img class="pro-card-img lazy-image" src="${
-                          item.img
-                        }" alt="${item.name}" />
+                        <img class="pro-card-img" 
+                             src="${ item.img}" 
+                             alt="${item.name}" />
                         <span class="pro-card-name">${item.name}</span>
                         <span class="pro-card-brand">${item.brand}</span>
                         <span class="pro-card-price">₹${item.price}</span>

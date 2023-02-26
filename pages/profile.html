@@ -23,38 +23,51 @@
   <body>
     <div class="container">
       <div class="prof-container">
-        <div class="prof-user-img-container">
-          <img
-            class="prof-user-img border-line"
-            src="../images/img_avatar.png"
-            alt="Profile Pic"
-          />
-          <img
+        <div class="user-info-container">
+          <div class="prof-user-img-container">
+            <img
+              class="prof-user-img border-line"
+              src="../images/img_avatar.png"
+              alt="Profile Pic"
+            />
+            <img
               id="img-edit"
               class="prof-user-img-edt border-line"
               src="../icons/ic_edit.png"
               alt="Icon Edit"
             />
-        </div>
-        <div class="prof-user-details">
-          <div class="prof-user-name-container">
+          </div>
+          <div class="prof-user-details">
             <span
               class="prof-user-name"
               name="prof-user-name"
-              id="prof-user-name"
+              id="user-name"
               contenteditable="false"
-            >User Name</span>
-            <img
-              id="name-edit"
-              class="prof-user-name-edt icon"
-              src="../icons/ic_edit.png"
-              alt="Icon Edit"
-              onclick="editName()"
-              onfocus="this.value = this.value;"
-            />
+            ></span>
+            <span id="user-email" class="prof-user-email"></span>
+            <div onclick="goToSignUp()" class="btn-sign-in border-line rounded">Sign Up</div>
           </div>
-          <span class="prof-user-email">user@example.com</span>
         </div>
+        <div class="user-info-edt-container row">
+          <div class="col-sm-6">
+            <div class="btn-edit-name rounded border-line">Edit Name</div>
+          </div>
+          <div class="col-sm-6">
+            <div class="btn-edit-pass rounded border-line">Change Password</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="opt-my-order bottom-line">
+          My Orders
+        </div>
+        <div class="opt-my-cart bottom-line">
+          My Cart
+        </div>
+      </div>
+      <div class="copyright-section">
+        Develped by <a href="http://rameesjahan.github.io">Ramees Jahan</a><br />
+        <span>©copyright 2023</span>
       </div>
     </div>
 

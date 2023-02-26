@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;900&display=swap');
 
 :root{
   --primary-white: #fefeff;
@@ -263,7 +263,7 @@ a{
 .product-btn-buy:hover,
 .product-btn-add:hover{
   color: var(--primary-white);
-  background-color: var(--primary-color);
+  background-color: var(--primary-black);
 }
 
 .pro-not-found{
@@ -295,13 +295,19 @@ a{
 
 .prof-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-bottom: 1px solid var(--primary-black);
+}
+
+.user-info-container{
+  display: flex;
+  flex-direction: row;
 }
 
 .prof-user-img-container{
   position: relative;
   margin: 8px;
+  width: 100px;
 }
 
 .prof-user-img{
@@ -320,39 +326,159 @@ a{
   height: 24px;
   width: 24px;
 }
+.prof-user-img-edt:hover{
+  filter: invert(1);
+}
 
 .prof-user-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   margin: 8px;
 }
 
-.prof-user-name-container{
-  display: flex;
-  width: 100%;
-}
-
 .prof-user-name{
   max-width: 100%;
-  border: none;
   padding: 0;
   transition: 300ms;
   white-space: nowrap;
   overflow: ellipsis;
-  margin-right: 4px;
-}
-
-.prof-user-name-edt{
-  flex-shrink: 1;
-}
-
-.prof-user-name:focus{
-  outline: none;
-}
-
-.prof-user-name.editable{
-  border-bottom: 2px solid var(--primary-black);
 }
 
 .prof-user-email{
   font-size: 12px;
+  margin: 8px 0;
 }
+
+.btn-sign-in{
+  padding: 4px 16px;
+}
+
+.btn-edit-name,
+.btn-edit-pass{
+  text-align: center;
+  padding: 8px;
+  margin: 8px;
+}
+
+.btn-sign-in:hover,
+.btn-edit-name:hover,
+.btn-edit-pass:hover{
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+}
+
+.opt-my-order,
+.opt-my-cart{
+  padding: 16px;
+}
+
+.bottom-line{
+  border-bottom: 1px solid var(--primary-black);
+}
+
+.copyright-section{
+  color: #999999;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.copyright-section a{
+  text-decoration: underline;
+}
+
+.copyright-section span{
+  font-size: 10px;
+}
+
+/*Style to SignUp Page
+=========================================*/
+
+.signup-body{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.signup-content{
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 376px;
+  padding: 14px;
+}
+
+.signup-title{
+  margin: 4px;
+  align-self: center;
+}
+.error-msg{
+  visibility: hidden;
+  color: #ff0000;
+  font-size: 10px;
+}
+.error-msg.show{
+  visibility: visible;
+}
+
+.signup-ipt-name,
+.signup-ipt-email,
+.signup-ipt-pass{
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--primary-black);
+}
+
+.signup-ipt-name-label,
+.signup-ipt-email-label,
+.signup-ipt-pass-label{
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.signup-btn{
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  margin: 12px 0;
+  padding: 8px;
+  font-weight: 400;
+}
+
+.signup-google{
+  text-align: center;
+  padding: 8px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.signup-btn:hover,
+.signup-google:hover{
+  box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.14) , 
+              0px 2px 8px 3px rgba(0,0,0,0.12) , 
+              0px 4px 6px -3px rgba(0,0,0,0.2) ;
+  
+}
+
+.or-signup{
+  color: #9c9c9c;
+  align-self: center;
+  font-size: 12px;
+}
+
+.signup-old{
+  align-self: center;
+  font-size: 12px;
+}
+
+.signup-old a{
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+

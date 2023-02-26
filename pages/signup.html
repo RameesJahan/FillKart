@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Product Name</title>
+
+    <!--Styles-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/style.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="signup-body p-2">
+      <div class="signup-content border-line rounded">
+        <h2 class="signup-title">Sign Up</h2>
+        
+        <label for="signup-ipt-name" class="signup-ipt-name-label">Full Name</label>
+        <input type="text" class="signup-ipt-name rounded" name="signup-ipt-name" id="signup-ipt-name" placeholder="Full Name" />
+        <span id="err-msg-name" class="error-msg show">error message</span>
+        
+        <label for="signup-ipt-email" class="signup-ipt-email-label">E-Mail</label>
+        <input type="email" class="signup-ipt-email rounded" name="signup-ipt-email" id="signup-ipt-email" placeholder="Email" />
+        <span id="err-msg-email" class="error-msg">error message</span>
+        
+        <label for="signup-ipt-pass" class="signup-ipt-pass-label">Password</label>
+        <input type="password" class="signup-ipt-pass rounded" name="signup-ipt-pass" id="signup-ipt-pass" placeholder="Password"/>
+        <span id="err-msg-pass" class="error-msg show">error message</span>
+        
+        <input type="submit" class="signup-btn border-line rounded" name="signup-btn" id="signup-btn" value="Sign Up" />
+        
+        <span class="or-signup">Or SignUp With</span>
+        
+        <div class="signup-google border-line rounded">Google</div>
+        
+        <span class="signup-old">Already have an account? <a href="#">Sign In</a></span>
+      </div>
+    </div>
+    
+    <!--Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../scripts/utils.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>
