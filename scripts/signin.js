@@ -1,3 +1,5 @@
+import { validateEmail , validatePassword } from './utils.js';
+
 const iptEmail = document.getElementById('signin-ipt-email');
 const iptPass = document.getElementById('signin-ipt-pass');
 const errEmail = document.getElementById('si-err-msg-email');

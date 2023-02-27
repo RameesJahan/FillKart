@@ -1,3 +1,6 @@
+import { validateName , validateEmail , checkPasswordStrength } from './utils.js';
+import { signUp , googleSignIn } from './firebase.js'
+
 const iptName = document.getElementById('signup-ipt-name');
 const iptEmail = document.getElementById('signup-ipt-email');
 const iptPass = document.getElementById('signup-ipt-pass');
@@ -110,4 +113,7 @@ btnSignUp.onclick = (e) => {
   }
 }
 
+btnGoogle.onclick = () => {
+  googleSignIn();
+}
 

@@ -66,3 +66,5 @@ function checkPasswordStrength(password) {
   return "Medium";
 }
 //console.log(checkPasswordStrength("@JohnDoe"))
+
+export { getJsonData , encode , goBack , validatePassword , validateName , validateEmail , checkPasswordStrength};
