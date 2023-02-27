@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Create Account</title>
+
+    <!--Styles-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/style.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="signin-body p-2">
+      <div class="signin-content border-line rounded">
+        <h2 class="signin-title">Sign In</h2>
+        
+        <div class="err-wrong-info" id="err-wrong-info">Incorrect Email or Password</div>
+        
+        <label for="signin-ipt-email" class="signin-ipt-email-label">E-Mail</label>
+        <input type="email" class="signin-ipt-email rounded" name="signin-ipt-email" id="signin-ipt-email" placeholder="Email" />
+        <span id="si-err-msg-email" class="error-msg">Enter Valid Email</span>
+        
+        <label for="signin-ipt-pass" class="signin-ipt-pass-label">Password</label>
+        <input type="password" class="signin-ipt-pass rounded" name="signin-ipt-pass" id="signin-ipt-pass" placeholder="Password"/>
+        <span id="si-err-msg-pass" class="error-msg">Password Not Valid</span>
+        
+        <input type="submit" class="signin-btn border-line rounded" name="signin-btn" id="signin-btn" value="Sign In" />
+        
+        <span class="or-signin">Or SignIn With</span>
+        
+        <div class="signin-google border-line rounded" id="signin-google">Google</div>
+        
+        <span class="signin-new">Create account? <a href="./signup.html">Sign Up</a></span>
+      </div>
+    </div>
+    
+    <!--Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../scripts/utils.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../scripts/signin.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>

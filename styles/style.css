@@ -415,6 +415,8 @@ a{
   width: 100%;
   max-width: 376px;
   padding: 14px;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .signup-title{
@@ -424,7 +426,8 @@ a{
 .error-msg{
   visibility: hidden;
   color: #ff0000;
-  font-size: 10px;
+  font-size: 12px;
+  font-family: 'Monaco';
 }
 .error-msg.show{
   visibility: visible;
@@ -485,3 +488,99 @@ a{
   font-weight: 400;
 }
 
+/*Style to SignIn Page
+=========================================*/
+
+.signin-body{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.signin-content{
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 376px;
+  padding: 14px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.signin-title{
+  margin: 4px;
+  align-self: center;
+}
+
+.signin-ipt-email,
+.signin-ipt-pass{
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--primary-black);
+}
+
+.signin-ipt-email-label,
+.signin-ipt-pass-label{
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.signin-btn{
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  margin: 12px 0;
+  padding: 8px;
+  font-weight: 400;
+}
+
+.signin-google{
+  text-align: center;
+  padding: 8px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.signin-btn:hover,
+.signin-google:hover{
+  box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.14) , 
+              0px 2px 8px 3px rgba(0,0,0,0.12) , 
+              0px 4px 6px -3px rgba(0,0,0,0.2) ;
+  
+}
+
+.or-signin{
+  color: #9c9c9c;
+  align-self: center;
+  font-size: 12px;
+}
+
+.signin-new{
+  align-self: center;
+  font-size: 12px;
+}
+
+.signin-new a{
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.err-wrong-info{
+  color: #ff0000;
+  display: none;
+  padding: 12px;
+  margin: 8px;
+  background-color: rgba(255,0,0,0.129);
+  border: 1px solid #ff0000;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Monaco';
+  font-weight: bold;
+}
+
+.err-wrong-info.show{
+  display: block;
+}

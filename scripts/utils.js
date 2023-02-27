@@ -32,11 +32,37 @@ function validatePassword(password) {
 }
 
 function validateName(name) {
-  if (!name) {
-    return false;
-  }
-  if (!/^[a-zA-Z]+$/.test(name)) {
-    return false;
-  }
-  return true;
+  const regex = /^[a-zA-Z]+([ ][a-zA-Z]+)*$/;
+  return regex.test(name);
 }
+
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+function checkPasswordStrength(password) {
+  if (!password) {
+    return "Password is required";
+  } 
+  if (password.length < 8 || /^[a-zA-Z]+$/.test(password)) {
+    return "Weak";
+  }
+
+  let hasLowercase = /[a-z]/.test(password);
+  let hasUppercase = /[A-Z]/.test(password);
+  let hasNumber = /\d/.test(password);
+  let hasSymbol = /[^a-zA-Z0-9]/.test(password);
+  let hasRepeatedChar = /(.).*\1/.test(password);
+
+  if ((hasLowercase && hasUppercase && hasNumber && hasSymbol) && !hasRepeatedChar) {
+    return "Strong";
+  }
+
+  if (hasLowercase && hasUppercase && hasNumber && hasSymbol) {
+    return "Good";
+  }
+
+  return "Medium";
+}
+//console.log(checkPasswordStrength("@JohnDoe"))

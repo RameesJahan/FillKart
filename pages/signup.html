@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Product Name</title>
+    <title>Create Account</title>
 
     <!--Styles-->
     <link
@@ -27,23 +27,26 @@
         
         <label for="signup-ipt-name" class="signup-ipt-name-label">Full Name</label>
         <input type="text" class="signup-ipt-name rounded" name="signup-ipt-name" id="signup-ipt-name" placeholder="Full Name" />
-        <span id="err-msg-name" class="error-msg show">error message</span>
+        <span id="err-msg-name" class="error-msg">Enter a valid Name</span>
         
         <label for="signup-ipt-email" class="signup-ipt-email-label">E-Mail</label>
         <input type="email" class="signup-ipt-email rounded" name="signup-ipt-email" id="signup-ipt-email" placeholder="Email" />
-        <span id="err-msg-email" class="error-msg">error message</span>
+        <span id="err-msg-email" class="error-msg">Enter Valid Email</span>
         
         <label for="signup-ipt-pass" class="signup-ipt-pass-label">Password</label>
         <input type="password" class="signup-ipt-pass rounded" name="signup-ipt-pass" id="signup-ipt-pass" placeholder="Password"/>
-        <span id="err-msg-pass" class="error-msg show">error message</span>
+        <span id="err-msg-pass" class="error-msg">error message</span>
+        
+        <input type="password" class="signup-ipt-pass rounded" name="signup-ipt-repass" id="signup-ipt-repass" placeholder="Re-Type Password"/>
+        <span id="err-msg-repass" class="error-msg">Password Not Match</span>
         
         <input type="submit" class="signup-btn border-line rounded" name="signup-btn" id="signup-btn" value="Sign Up" />
         
         <span class="or-signup">Or SignUp With</span>
         
-        <div class="signup-google border-line rounded">Google</div>
+        <div class="signup-google border-line rounded" id="signup-btn-google">Google</div>
         
-        <span class="signup-old">Already have an account? <a href="#">Sign In</a></span>
+        <span class="signup-old">Already have an account? <a href="./signin.html">Sign In</a></span>
       </div>
     </div>
     
@@ -55,6 +58,11 @@
     ></script>
     <script
       src="../scripts/utils.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../scripts/signup.js"
       type="text/javascript"
       charset="utf-8"
     ></script>
