@@ -1,5 +1,5 @@
-import { validateName , validateEmail , checkPasswordStrength } from './utils.js';
-import { signUp , googleSignIn } from './firebase.js'
+import { validateName , validateEmail , checkPasswordStrength , createUser } from './utils.js';
+import { auth , provider , signUp , signInWithPopup } from './firebase.js'
 
 const iptName = document.getElementById('signup-ipt-name');
 const iptEmail = document.getElementById('signup-ipt-email');
@@ -114,6 +114,23 @@ btnSignUp.onclick = (e) => {
 }
 
 btnGoogle.onclick = () => {
-  googleSignIn();
+  
+   signInWithPopup(auth, provider)
+  .then((result) => {
+    const user = result.user;
+    createUser( user.uid , user.displayName , user.email , user.photoURL);
+    window.location.href = "./profile.html"
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = provider.credentialFromError(error);
+    // ...
+    alert(`Error: \n 
+           ${errorMessage}`)
+  });
 }
 

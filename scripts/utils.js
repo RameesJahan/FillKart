@@ -44,7 +44,7 @@ function validateEmail(email) {
 function checkPasswordStrength(password) {
   if (!password) {
     return "Password is required";
-  } 
+  }
   if (password.length < 8 || /^[a-zA-Z]+$/.test(password)) {
     return "Weak";
   }
@@ -55,7 +55,13 @@ function checkPasswordStrength(password) {
   let hasSymbol = /[^a-zA-Z0-9]/.test(password);
   let hasRepeatedChar = /(.).*\1/.test(password);
 
-  if ((hasLowercase && hasUppercase && hasNumber && hasSymbol) && !hasRepeatedChar) {
+  if (
+    hasLowercase &&
+    hasUppercase &&
+    hasNumber &&
+    hasSymbol &&
+    !hasRepeatedChar
+  ) {
     return "Strong";
   }
 
@@ -67,4 +73,42 @@ function checkPasswordStrength(password) {
 }
 //console.log(checkPasswordStrength("@JohnDoe"))
 
-export { getJsonData , encode , goBack , validatePassword , validateName , validateEmail , checkPasswordStrength};
+const createUser = (id, name, email, photo = "/images/img_avatar.png") => {
+  const user = {
+    id: id,
+    name: name,
+    email: email,
+    photoUrl: photo,
+    cart: [],
+    orders: [],
+  };
+
+  let raw = window.localStorage.getItem("USERS");
+
+  if (raw) {
+    let users = JSON.parse(raw);
+  } else {
+    let users = [];
+  }
+  let found = users.some((item) => item.id === id);
+  if(!found) users.push(user);
+
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
+
+const getUser = (id) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  return users.find((item) => item.id === id);
+};
+
+export {
+  getJsonData,
+  encode,
+  goBack,
+  validatePassword,
+  validateName,
+  validateEmail,
+  checkPasswordStrength,
+  createUser,
+  getUser
+};

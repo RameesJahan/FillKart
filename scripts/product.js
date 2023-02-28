@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
     document.getElementById("product-disc").innerHTML = product.disc;
     document.getElementById("product-brand").innerHTML = product.brand;
     //document.getElementById("product-review").innerHTML = product.review;
-    document.getElementById("product-img").src = "." + product.img;
+    document.getElementById("product-img").src = product.img;
 
     /*Discription show more
 =========================================*/

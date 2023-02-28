@@ -1,7 +1,7 @@
 [
   {
     "id": "P100",
-    "img": "./images/img_P100.jpg",
+    "img": "/images/img_P100.jpg",
     "name": "Lenovo Ideapad Slim 3i",
     "brand": "Lenovo",
     "price": 42999,
@@ -10,7 +10,7 @@
   },
   {
     "id": "P101",
-    "img": "./images/img_P101.jpg",
+    "img": "/images/img_P101.jpg",
     "name": "Samsung Galaxy A52s 5G",
     "brand": "Samsung",
     "price": 35999,
@@ -19,7 +19,7 @@
   },
   {
     "id": "P102",
-    "img": "./images/img_P102.jpg",
+    "img": "/images/img_P102.jpg",
     "name": "JBL T460BT Extra Bass Wireless Headphones",
     "brand": "JBL",
     "price": 3199,
@@ -28,7 +28,7 @@
   },
   {
     "id": "P103",
-    "img": "./images/img_P103.jpg",
+    "img": "/images/img_P103.jpg",
     "name": "HP 14s-dq2535TU",
     "brand": "HP",
     "price": 40990,
@@ -37,7 +37,7 @@
   },
   {
     "id": "P104",
-    "img": "./images/img_P104.jpg",
+    "img": "/images/img_P104.jpg",
     "name": "OnePlus Nord CE 5G",
     "brand": "OnePlus",
     "price": 22999,
@@ -46,7 +46,7 @@
   },
   {
     "id": "P105",
-    "img": "./images/img_P105.jpg",
+    "img": "/images/img_P105.jpg",
     "name": "Sony WF-1000XM4 Noise Cancelling Truly Wireless Earbuds",
     "brand": "Sony",
     "price": 24990,
@@ -55,7 +55,7 @@
   },
   {
     "id": "P106",
-    "img": "./images/img_P106.jpg",
+    "img": "/images/img_P106.jpg",
     "name": "Women's Printed Shirt Dress",
     "brand": "Zara",
     "price": 2999,
@@ -64,7 +64,7 @@
   },
   {
     "id": "P107",
-    "img": "./images/img_P107.jpg",
+    "img": "/images/img_P107.jpg",
     "name": "Dell Inspiron 3505",
     "brand": "Dell",
     "price": 33990,
@@ -73,7 +73,7 @@
   },
   {
     "id": "P108",
-    "img": "./images/img_P108.jpg",
+    "img": "/images/img_P108.jpg",
     "name": "Xiaomi Redmi Note 10 Pro",
     "brand": "Xiaomi",
     "price": 17999,
@@ -82,7 +82,7 @@
   },
   {
     "id": "P109",
-    "img": "./images/img_P109.jpg",
+    "img": "/images/img_P109.jpg",
     "name": "SanDisk Extreme Pro 128GB SDXC UHS-I Card",
     "brand": "SanDisk",
     "price": 3599,
@@ -91,7 +91,7 @@
   },
   {
     "id": "P110",
-    "img": "./images/img_P110.jpg",
+    "img": "/images/img_P110.jpg",
     "name": "Men's Slim Fit Chinos",
     "brand": "H&M",
     "price": 1999,
@@ -100,7 +100,7 @@
   },
   {
     "id": "P111",
-    "img": "./images/img_P111.jpg",
+    "img": "/images/img_P111.jpg",
     "name": "ASUS VivoBook 14 X415JA",
     "brand": "ASUS",
     "price": 40990,
@@ -109,7 +109,7 @@
   },
   {
     "id": "P112",
-    "img": "./images/img_P112.jpg",
+    "img": "/images/img_P112.jpg",
     "name": "Samsung Galaxy A52s 5G",
     "brand": "Samsung",
     "price": 35999,
@@ -118,7 +118,7 @@
   },
   {
     "id": "P113",
-    "img": "./images/img_P113.jpg",
+    "img": "/images/img_P113.jpg",
     "name": "Apple AirPods Pro",
     "brand": "Apple",
     "price": 24990,
@@ -127,7 +127,7 @@
   },
   {
     "id": "P114",
-    "img": "./images/img_P114.jpg",
+    "img": "/images/img_P114.jpg",
     "name": "Women's High Waisted Jeans",
     "brand": "Levi's",
     "price": 3999,
@@ -136,7 +136,7 @@
   },
   {
     "id": "P115",
-    "img": "./images/img_P115.jpg",
+    "img": "/images/img_P115.jpg",
     "name": "HP Pavilion Gaming 15-ec1024AX",
     "brand": "HP",
     "price": 72990,
@@ -145,7 +145,7 @@
   },
   {
     "id": "P116",
-    "img": "./images/img_P116.jpg",
+    "img": "/images/img_P116.jpg",
     "name": "Google Pixel 6",
     "brand": "Google",
     "price": 59999,
@@ -154,7 +154,7 @@
   },
   {
     "id": "P117",
-    "img": "./images/img_P117.jpg",
+    "img": "/images/img_P117.jpg",
     "name": "Fitbit Versa 3",
     "brand": "Fitbit",
     "price": 19990,
@@ -163,7 +163,7 @@
   },
   {
     "id": "P118",
-    "img": "./images/img_P118.jpg",
+    "img": "/images/img_P118.jpg",
     "name": "Men's Slim Fit T-Shirt",
     "brand": "H&M",
     "price": 799,
@@ -172,7 +172,7 @@
   },
   {
     "id": "P119",
-    "img": "./images/img_P119.jpg",
+    "img": "/images/img_P119.jpg",
     "name": "Dell Inspiron 15 5510",
     "brand": "Dell",
     "price": 79990,
@@ -181,7 +181,7 @@
   },
   {
     "id": "P120",
-    "img": "./images/img_P120.jpg",
+    "img": "/images/img_P120.jpg",
     "name": "OnePlus Nord 2 5G",
     "brand": "OnePlus",
     "price": 29999,
@@ -190,7 +190,7 @@
   },
   {
     "id": "P121",
-    "img": "./images/img_P121.jpg",
+    "img": "/images/img_P121.jpg",
     "name": "Men's Denim Jacket",
     "brand": "Levi's",
     "price": 5999,
@@ -199,7 +199,7 @@
   },
   {
     "id": "P122",
-    "img": "./images/img_P122.jpg",
+    "img": "/images/img_P122.jpg",
     "name": "Women's High Waisted Jeans",
     "brand": "Wrangler",
     "price": 3499,
@@ -208,7 +208,7 @@
   },
   {
     "id": "P123",
-    "img": "./images/img_P123.jpg",
+    "img": "/images/img_P123.jpg",
     "name": "Kids' Hooded Sweatshirt",
     "brand": "Adidas",
     "price": 1499,
@@ -217,7 +217,7 @@
   },
   {
     "id": "P124",
-    "img": "./images/img_P124.jpg",
+    "img": "/images/img_P124.jpg",
     "name": "Men's Polo T-Shirt",
     "brand": "Ralph Lauren",
     "price": 2999,
@@ -226,7 +226,7 @@
   },
   {
     "id": "P125",
-    "img": "./images/img_P125.jpg",
+    "img": "/images/img_P125.jpg",
     "name": "Women's Knee Length Skirt",
     "brand": "Zara",
     "price": 2499,
@@ -235,7 +235,7 @@
   },
   {
     "id": "P126",
-    "img": "./images/img_P126.jpg",
+    "img": "/images/img_P126.jpg",
     "name": "Kids' Denim Shorts",
     "brand": "H&M",
     "price": 999,
@@ -244,7 +244,7 @@
   },
   {
     "id": "P127",
-    "img": "./images/img_P127.jpg",
+    "img": "/images/img_P127.jpg",
     "name": "Men's Casual Shoes",
     "brand": "Nike",
     "price": 2799,
@@ -253,7 +253,7 @@
   },
   {
     "id": "P128",
-    "img": "./images/img_P128.jpg",
+    "img": "/images/img_P128.jpg",
     "name": "Women's Black Leather Jacket",
     "brand": "Zara",
     "price": 6999,
@@ -262,7 +262,7 @@
   },
   {
     "id": "P129",
-    "img": "./images/img_P129.jpg",
+    "img": "/images/img_P129.jpg",
     "name": "Kids Hoodie Sweatshirt",
     "brand": "Adidas",
     "price": 2499,
@@ -271,7 +271,7 @@
   },
   {
     "id": "P130",
-    "img": "./images/img_P130.jpg",
+    "img": "/images/img_P130.jpg",
     "name": "Women's Trench Coat",
     "brand": "Burberry",
     "price": 23999,
@@ -280,7 +280,7 @@
   },
   {
     "id": "P131",
-    "img": "./images/img_P131.jpg",
+    "img": "/images/img_P131.jpg",
     "name": "Men's Leather Boots",
     "brand": "Red Wing",
     "price": 14999,
@@ -289,7 +289,7 @@
   },
   {
     "id": "P132",
-    "img": "./images/img_P132.jpg",
+    "img": "/images/img_P132.jpg",
     "name": "Leather Crossbody Bag",
     "brand": "Coach",
     "price": 8999,
@@ -298,7 +298,7 @@
   },
   {
     "id": "P133",
-    "img": "./images/img_P133.jpg",
+    "img": "/images/img_P133.jpg",
     "name": "Women's Midi Dress",
     "brand": "Diane von Furstenberg",
     "price": 8999,
@@ -307,7 +307,7 @@
   },
   {
     "id": "P134",
-    "img": "./images/img_P134.jpg",
+    "img": "/images/img_P134.jpg",
     "name": "Kids Denim Jeans",
     "brand": "Gap",
     "price": 1499,
@@ -316,7 +316,7 @@
   },
   {
     "id": "P135",
-    "img": "./images/img_P135.jpg",
+    "img": "/images/img_P135.jpg",
     "name": "Men's Leather Shoes",
     "brand": "Clarks",
     "price": 3999,
@@ -325,7 +325,7 @@
   },
   {
     "id": "P136",
-    "img": "./images/img_P136.jpg",
+    "img": "/images/img_P136.jpg",
     "name": "Leather Wallet",
     "brand": "Montblanc",
     "price": 6999,
@@ -334,7 +334,7 @@
   },
   {
     "id": "P137",
-    "img": "./images/img_P137.jpg",
+    "img": "/images/img_P137.jpg",
     "name": "Women's Leather Jacket",
     "brand": "Acne Studios",
     "price": 39999,
@@ -343,7 +343,7 @@
   },
   {
     "id": "P138",
-    "img": "./images/img_P138.jpg",
+    "img": "/images/img_P138.jpg",
     "name": "Men's Leather Jacket",
     "brand": "Schott NYC",
     "price": 24999,
@@ -352,7 +352,7 @@
   },
   {
     "id": "P139",
-    "img": "./images/img_P139.jpg",
+    "img": "/images/img_P139.jpg",
     "name": "Kids Polo T-Shirt",
     "brand": "Ralph Lauren",
     "price": 1599,
@@ -361,7 +361,7 @@
   },
   {
     "id": "P140",
-    "img": "./images/img_P140.jpg",
+    "img": "/images/img_P140.jpg",
     "name": "Leather Watch",
     "brand": "Fossil",
     "price": 8999,
@@ -370,7 +370,7 @@
   },
   {
     "id": "P141",
-    "img": "./images/img_P141.jpg",
+    "img": "/images/img_P141.jpg",
     "name": "Women's Blouse",
     "brand": "Chloe",
     "price": 14999,
@@ -379,7 +379,7 @@
   },
   {
     "id": "P142",
-    "img": "./images/img_P142.jpg",
+    "img": "/images/img_P142.jpg",
     "name": "Men's Formal Shirt",
     "brand": "Louis Philippe",
     "price": 2599,
@@ -388,7 +388,7 @@
   },
   {
     "id": "P143",
-    "img": "./images/img_P143.jpg",
+    "img": "/images/img_P143.jpg",
     "name": "Women's Leather Boots",
     "brand": "Stuart Weitzman",
     "price": 19999,
@@ -397,7 +397,7 @@
   },
   {
     "id": "P144",
-    "img": "./images/img_P144.jpg",
+    "img": "/images/img_P144.jpg",
     "name": "Kids Hoodie",
     "brand": "Adidas",
     "price": 1999,
@@ -406,7 +406,7 @@
   },
   {
     "id": "P145",
-    "img": "./images/img_P145.jpg",
+    "img": "/images/img_P145.jpg",
     "name": "Leather Belt",
     "brand": "Hermes",
     "price": 29999,
@@ -415,7 +415,7 @@
   },
   {
     "id": "P146",
-    "img": "./images/img_P146.jpg",
+    "img": "/images/img_P146.jpg",
     "name": "Women's Maxi Dress",
     "brand": "Gucci",
     "price": 69999,
@@ -424,7 +424,7 @@
   },
   {
     "id": "P147",
-    "img": "./images/img_P147.jpg",
+    "img": "/images/img_P147.jpg",
     "name": "Men's Dress Shoes",
     "brand": "Allen Edmonds",
     "price": 7999,
@@ -433,7 +433,7 @@
   },
   {
     "id": "P148",
-    "img": "./images/img_P148.jpg",
+    "img": "/images/img_P148.jpg",
     "name": "Kids Denim Jacket",
     "brand": "Levi's",
     "price": 2499,
@@ -442,7 +442,7 @@
   },
   {
     "id": "P149",
-    "img": "./images/img_P149.jpg",
+    "img": "/images/img_P149.jpg",
     "name": "Leather Backpack",
     "brand": "Tumi",
     "price": 7499,
@@ -451,7 +451,7 @@
   },
   {
     "id": "P150",
-    "img": "./images/img_P150.jpg",
+    "img": "/images/img_P150.jpg",
     "name": "Wireless Earbuds",
     "brand": "Sony",
     "price": 2499,
