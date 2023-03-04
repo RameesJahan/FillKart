@@ -84,12 +84,8 @@ const createUser = (id, name, email, photo = "/images/img_avatar.png") => {
   };
 
   let raw = window.localStorage.getItem("USERS");
-
-  if (raw) {
-    let users = JSON.parse(raw);
-  } else {
-    let users = [];
-  }
+  console.log(raw);
+  let users = raw ? JSON.parse(raw) : [];
   let found = users.some((item) => item.id === id);
   if(!found) users.push(user);
 

@@ -1,4 +1,5 @@
-import { getJsonData } from "./utils.js";
+import { getJsonData, getUser } from "./utils.js";
+import { auth, signOut, onAuthStateChanged } from "./firebase.js";
 
 const categories = [
   "Laptops",
@@ -9,18 +10,38 @@ const categories = [
   "Kids",
 ];
 var products;
+var user;
+
+const userPic = document.getElementById("usr_img");
+const fabCart = document.getElementById("fab-cart");
+const cartBadge = document.getElementById("cart-badge");
+
 
 /*Function to go To Profile page
 =========================================*/
 window.goToUser = () => {
-  window.location.href = "./pages/profile.html";
+  window.location.href = "/pages/profile.html";
 };
 
 window.addEventListener("load", function () {
-/*Function to load products
-=========================================*/
+  
+    //Get Current User
+  onAuthStateChanged(auth, (u) => {
+    if (u) {
+      // User is signed in
+      user = getUser(u.uid);
+      main();
+    } else {
+      // User is signed out
+      userPic.src = "/images/img_avatar.png";
+      cartBadge.classList.add("hide");
+    }
+  });
+  
+  /*Function to load products
+  =========================================*/
   // Call the getJsonData function and log the JSON data to the console
-  getJsonData("./data/products.json")
+  getJsonData("/data/products.json")
     .then((data) => {
       console.log(data);
       products = data;
@@ -30,8 +51,8 @@ window.addEventListener("load", function () {
       console.error(error);
     });
 
-/*Function to Create Catagory List
-=========================================*/
+  /*Function to Create Catagory List
+  =========================================*/
   const loadCatData = () => {
     categories.forEach((item) => {
       let temp = `<h3 class="pro-list-cat-title m-2">${item}</h3>
@@ -45,16 +66,16 @@ window.addEventListener("load", function () {
     });
   };
 
-/*Function to create Product List
-=========================================*/
+  /*Function to create Product List
+  =========================================*/
   const loadProData = (i) => {
     let proList = "";
 
     let result = products.filter((item) => item.category === i);
     if (result == undefined) return;
     result.forEach((item) => {
-      let proTemp = `<a href="./pages/product.html?id=${item.id}">
-                      <div class="pro-card border-line">
+      let proTemp = `<a href="/pages/product.html?id=${item.id}">
+                      <div class="pro-card border-line" data-aos="fade-left">
                         <img class="pro-card-img" 
                              src="${item.img}" 
                              alt="${item.name}" />
@@ -67,4 +88,20 @@ window.addEventListener("load", function () {
     });
     document.getElementById("pro_item_list_" + i).innerHTML = proList;
   };
+  
 });
+
+const main = () => {
+  console.log(user)
+  fabCart.onclick = () => window.location.href = "#";
+  
+  //Cart Badge
+  if (user.cart.length === 0) {
+    cartBadge.classList.add("hide");
+  }else{
+    cartBadge.classList.remove("hide");
+    cartBadge.innerText = user.cart.length;
+  }
+  
+  userPic.src = user.photoUrl;
+}

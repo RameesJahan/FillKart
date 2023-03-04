@@ -4,16 +4,42 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>Fill Kart</title>
 
     <!--Styles-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+      type="text/css"
+      media="all"
+    />
   </head>
   <body>
     <div class="container">
@@ -22,6 +48,7 @@
           <h3 class="logo-title">Fill Kart</h3>
           <div class="nav-profile-container">
             <img
+              id="usr_img"
               onclick="goToUser()"
               class="nav-profile-avatar"
               src="./images/img_avatar.png"
@@ -46,19 +73,19 @@
           </div>
         </div>
       </div>
-      
+
       <div class="main-body">
         <div id="pro_list_cont" class="pro-list-container">
           <!--Here is the body of the page that load using JS-->
         </div>
       </div>
-      
+
       <div class="fab-container">
-        <div class="fab-cart">
-          <div class="cart-badge">10</div>
+        <div class="fab-cart" id="fab-cart">
+          <div class="cart-badge" id="cart-badge">10</div>
           <img class="img-cart" src="./icons/ic_kart.png" alt="Cart Icon" />
         </div>
-      </div> 
+      </div>
     </div>
 
     <!--Scripts-->
@@ -67,7 +94,28 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./scripts/script.js" charset="utf-8">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
     </script>
+    <script type="module" src="./scripts/script.js" charset="utf-8"></script>
   </body>
 </html>

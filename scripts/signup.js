@@ -119,18 +119,14 @@ btnGoogle.onclick = () => {
   .then((result) => {
     const user = result.user;
     createUser( user.uid , user.displayName , user.email , user.photoURL);
+    console.log("Sign Up Successfully")
     window.location.href = "./profile.html"
   }).catch((error) => {
-    // Handle Errors here.
+   
     const errorCode = error.code;
     const errorMessage = error.message;
-    // The email of the user's account used.
-    const email = error.customData.email;
-    // The AuthCredential type that was used.
-    const credential = provider.credentialFromError(error);
-    // ...
-    alert(`Error: \n 
-           ${errorMessage}`)
+    
+    alert(errorMessage);
   });
 }
 

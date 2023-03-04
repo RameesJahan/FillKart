@@ -128,6 +128,10 @@ a{
   transform: translate(26px,-26px);
 }
 
+.cart-badge.hide{
+  display:none;
+}
+
 .main-body{
   margin: 8px;
   margin-bottom: 80px;
@@ -583,4 +587,23 @@ a{
 
 .err-wrong-info.show{
   display: block;
+}
+
+/*Style to Verify Page
+=========================================*/
+
+.body-verify{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  padding: 20%;
+}
+.txt-verify{
+  font-size: 34px;
+  text-align: center;
 }
