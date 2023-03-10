@@ -29,6 +29,8 @@ window.addEventListener("load", function () {
   onAuthStateChanged(auth, (u) => {
     if (u) {
       // User is signed in
+      if (!u.emailVerified) window.location.href = "/pages/verify.html";
+      
       user = getUser(u.uid);
       main();
     } else {

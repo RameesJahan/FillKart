@@ -5,8 +5,11 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
+  sendEmailVerification,
   onAuthStateChanged,
-  signOut
+  signOut,
+  updateProfile,
+  sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 
 const firebaseConfig = {
@@ -20,20 +23,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
-const signUp = (name, email, pass) => {
-  createUserWithEmailAndPassword(auth, email, pass)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-    });
-};
 
 const signIn = (email, pass) => {
   signInWithEmailAndPassword(auth, email, pass)
@@ -50,4 +39,15 @@ const signIn = (email, pass) => {
 
 const provider = new GoogleAuthProvider();
 
-export { auth , provider , signUp , signIn , signInWithPopup , onAuthStateChanged , signOut}
+export {
+  auth,
+  provider,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  sendEmailVerification,
+  updateProfile,
+  sendPasswordResetEmail
+};

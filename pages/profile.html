@@ -27,6 +27,17 @@
     />
   </head>
   <body>
+    <div class="dialog-container" id="dialog-container">
+      <div class="edt-name-dialog rounded border-line container">
+        <h5 class="edt-name-title">Edit Name:</h5>
+        <input type="text" class="ipt-edit-name" name="ipt-edit-name" id="ipt-edit-name" placeholder="Enter Name" />
+        <span id="edt-name-err-msg" class="error-msg">Enter Valid Email</span>
+        <div class="row">
+          <input type="button" class="btn-edt-dia col rounded border-line" name="edt-name-cancel" id="edt-name-cancel" value="Cancel" />
+          <input type="button" class="btn-edt-dia col rounded border-line" name="edt-name-save" id="edt-name-save" value="Save" />
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="prof-container">
         <div class="user-info-container">
@@ -57,10 +68,10 @@
         </div>
         <div class="user-info-edt-container row">
           <div class="col-sm-6">
-            <div class="btn-edit-name rounded border-line">Edit Name</div>
+            <div class="btn-edit-name rounded border-line" id="btn-edit-name">Edit Name</div>
           </div>
           <div class="col-sm-6">
-            <div class="btn-edit-pass rounded border-line">Change Password</div>
+            <div class="btn-edit-pass rounded border-line" id="btn-edit-pass">Change Password</div>
           </div>
         </div>
       </div>
@@ -86,7 +97,7 @@
     ></script>
    
     <script
-      src="../scripts/profile.js"
+      src="/scripts/profile.js"
       type="module"
       charset="utf-8"
     ></script>

@@ -97,6 +97,13 @@ const getUser = (id) => {
   return users.find((item) => item.id === id);
 };
 
+const updateName = (user ,name) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  let index = users.findIndex((item) => item.id === user.uid);
+  users[index].name = name;
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+}
+
 export {
   getJsonData,
   encode,
@@ -106,5 +113,6 @@ export {
   validateEmail,
   checkPasswordStrength,
   createUser,
-  getUser
+  getUser,
+  updateName
 };
