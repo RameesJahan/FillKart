@@ -16,6 +16,11 @@ const userPic = document.getElementById("usr_img");
 const fabCart = document.getElementById("fab-cart");
 const cartBadge = document.getElementById("cart-badge");
 
+document.getElementById("ipt_search").onfocus = (e) => {
+  e.preventDefault();
+  window.location.href = "/pages/search.html"
+}
+
 
 /*Function to go To Profile page
 =========================================*/

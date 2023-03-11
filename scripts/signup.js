@@ -182,5 +182,7 @@ window.onpageshow = () => {
 const showError = (message) => {
   errInfo.classList.add("show");
   errInfo.innerText = message;
-  
+  setTimeout(() => {
+    errInfo.classList.remove("show");
+  }, 5000);
 }

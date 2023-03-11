@@ -659,3 +659,79 @@ a{
   color: var(--primary-white);
   background-color: var(--primary-black);
 }
+
+/*Style to Search Page
+=========================================*/
+
+.cat-list{
+  padding: 8px 4px;
+  overflow-x:auto;
+  white-space: nowrap;
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+.cat-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-list-item{
+  display: inline-block;
+  margin: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.search-item{
+  display: flex;
+  padding: 8px;
+}
+
+.srch-item-details{
+  flex: 1;
+  overflow: hidden;
+}
+
+.srch-item-details span{
+  display: block;
+  margin: 4px;
+  margin-top: 0;
+  padding: 0px;
+}
+
+.srch-item-name{
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.srch-item-cat{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.srch-item-disc{
+  color: #696969;
+  font-size: 10px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.srch-item-img{
+  aspect-ratio: 1/1;
+  width: 65px;
+}
+
+.no-reslt{
+  display: none;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Monaco';
+  margin: 8px;
+  font-size: 18px;
+}
+.no-reslt.show{
+  display: flex;
+}
