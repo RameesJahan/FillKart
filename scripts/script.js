@@ -106,9 +106,9 @@ const main = () => {
   
   //Cart Badge
   if (user.cart.length === 0) {
-    cartBadge.classList.add("hide");
+    cartBadge.style.display = "none";
   }else{
-    cartBadge.classList.remove("hide");
+    cartBadge.style.display = "flex";
     cartBadge.innerText = user.cart.length;
   }
   

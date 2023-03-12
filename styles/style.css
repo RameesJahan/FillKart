@@ -118,7 +118,7 @@ a{
 .cart-badge{
   background-color: var(--secondary-white);
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 32px;
@@ -126,10 +126,6 @@ a{
   border: 1px solid var(--primary-black);
   border-radius: 16px;
   transform: translate(26px,-26px);
-}
-
-.cart-badge.hide{
-  display:none;
 }
 
 .main-body{
