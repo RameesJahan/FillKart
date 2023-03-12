@@ -38,10 +38,12 @@ window.addEventListener("load", function () {
       
       user = getUser(u.uid);
       main();
+      
     } else {
       // User is signed out
       userPic.src = "/images/img_avatar.png";
       cartBadge.classList.add("hide");
+      fabCart.onclick = () => { alert("User Not Signed In")};
     }
   });
   
@@ -100,7 +102,7 @@ window.addEventListener("load", function () {
 
 const main = () => {
   console.log(user)
-  fabCart.onclick = () => window.location.href = "#";
+  fabCart.onclick = () => window.location.href = "/pages/cart.html";
   
   //Cart Badge
   if (user.cart.length === 0) {

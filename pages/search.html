@@ -23,7 +23,7 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <title>Fill Kart</title>
+    <title>FillKart: Search</title>
 
     <!--Styles-->
 
@@ -51,30 +51,18 @@
             type="text"
             name="ipt_search"
             id="ipt-search"
-            placeholder="Search..."
+            placeholder="Search for products..."
           />
         </div>
         <div class="cat-list" id="cat-list">
-          <span class="cat-list-item rounded border-line" id="cat-lis-item">
-            Laptops
-          </span>
+            <!--Here is the list of catagories-->
         </div>
       </div>
       
       <div class="search-body">
-        <span class="no-reslt">Sorry, no results found!</span>
-        <div class="search-item bottom-line">
-          <div class="srch-item-img-container">
-            <img class="srch-item-img" src="/images/shirt_1.jpg" alt="Product Image" />
-          </div>
-          <div class="srch-item-details">
-            <span class="srch-item-name">Product Name</span>
-            <span class="srch-item-cat">Category</span>
-            <span class="srch-item-disc">
-              eu commodo occaecat dolor eiusmod veniam voluptate esse eui8yttttyyyu laborum
-              egguihfddddtyygfrru commodo occaecat dolor eiusmod veniam voluptate esse eu laborum
-            </span>
-          </div>
+        <span class="no-reslt" id="no-reslt">Sorry, no results found!</span>
+        <div id="search-item-cont">
+          <!--Results are shown here-->
         </div>
       </div>
     </div>
@@ -97,15 +85,15 @@
         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
+        offset: 60, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
+        duration: 300, // values from 0 to 3000, with step 50ms
         easing: "ease", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
       });
     </script>
-    <script type="module" src="/scripts/script.js" charset="utf-8"></script>
+    <script type="module" src="/scripts/search.js" charset="utf-8"></script>
   </body>
 </html>

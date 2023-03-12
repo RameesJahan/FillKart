@@ -22,6 +22,16 @@ const encode = (str) => {
   return str.trim().replace(/ /g, "+");
 };
 
+const debounce = (func, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(null, args);
+    }, delay);
+  };
+};
+
 function goBack() {
   window.history.back();
 }
@@ -107,6 +117,7 @@ const updateName = (user ,name) => {
 export {
   getJsonData,
   encode,
+  debounce,
   goBack,
   validatePassword,
   validateName,

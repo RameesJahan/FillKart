@@ -23,7 +23,7 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <title>Fill Kart</title>
+    <title>FillKart: Cart</title>
 
     <!--Styles-->
 
@@ -36,61 +36,42 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
-      href="./styles/style.css"
+      href="/styles/style.css"
       type="text/css"
       media="all"
     />
+    
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="nav">
-          <h3 class="logo-title">Fill Kart</h3>
-          <div class="nav-profile-container">
-            <img
-              id="usr_img"
-              onclick="goToUser()"
-              class="nav-profile-avatar"
-              src="./images/img_avatar.png"
-              alt="Avatar Image"
-            />
-          </div>
-					
-        </div>
-        <div class="search-container">
-          <div class="search-box">
-            <input
-              class="ipt-search"
-              type="text"
-              name="ipt_search"
-              id="ipt_search"
-              placeholder="Search for products..."
-              readonly
-            />
-            <img
-              class="btn-search-icon icon"
-              src="./icons/ic_search.png"
-              alt="Search Icon"
-            />
-          </div>
-        </div>
+      <div class="body-header bottom-line">
+        <img class="header-back" src="/icons/ic_back.png" onclick="javascript: history.back()" />
+        <span class="header-title">My Cart</span>
       </div>
-
-      <div class="main-body">
-        <div id="pro_list_cont" class="pro-list-container">
-          <!--Here is the body of the page that load using JS-->
-        </div>
+      <div class="empty-body">
+        Your Cart is Empty!
       </div>
-
-      <div class="fab-container">
-        <div class="fab-cart" id="fab-cart">
-          <div class="cart-badge" id="cart-badge">10</div>
-          <img class="img-cart" src="./icons/ic_kart.png" alt="Cart Icon" />
+      <div class="pro-body">
+        <div class="pro-item-list">
+          <div class="pro-item row bottom-line">
+            <div class="pro-item-img-cont col-4">
+              <img class="pro-item-img" src="/images/shirt_1.jpg" alt="Product Name" />
+            </div>
+            <div class="pro-item-details col-6">
+              <span class="pro-item-name">Product Name</span>
+              <span class="pro-item-brand">Brand</span>
+              <span class="pro-item-price">₹39000</span>
+              <span class="pro-item-qty">Qty: 1pc</span>
+            </div>
+            <div class="pro-item-btn-cont col">
+              <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-item-btn"  value="Remove" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!--Scripts-->
+    
+        <!--Scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -109,15 +90,15 @@
         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
+        offset: 60, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
+        duration: 300, // values from 0 to 3000, with step 50ms
         easing: "ease", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
       });
     </script>
-    <script type="module" src="./scripts/script.js" charset="utf-8"></script>
+    <script type="module" src="/scripts/cart.js" charset="utf-8"></script>
   </body>
 </html>

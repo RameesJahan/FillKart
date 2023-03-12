@@ -664,7 +664,7 @@ a{
 =========================================*/
 
 .cat-list{
-  padding: 8px 4px;
+  padding: 0px 4px;
   overflow-x:auto;
   white-space: nowrap;
   width: 100%;
@@ -678,8 +678,13 @@ a{
 .cat-list-item{
   display: inline-block;
   margin: 4px;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: 'Monaco';
+}
+
+.cat-list-item.checked{
+  background: var(--primary-lightBlue);
 }
 
 .search-item{
@@ -734,4 +739,53 @@ a{
 }
 .no-reslt.show{
   display: flex;
+}
+
+/*Style to Cart|Orders  Page
+=========================================*/
+
+.header-back{
+  aspect-ratio: 1/1;
+  width: 28px;
+  margin: 8px;
+}
+
+.empty-body{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 28px;
+}
+.pro-item{
+  padding: 8px;
+}
+.pro-item-details{
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.pro-item-brand{
+  font-size: 12px;
+  color: #696969;
+}
+.pro-item-price{
+  font-weight: 500;
+}
+
+.pro-item-btn-cont{
+  align-self: center;
+}
+.pro-item-btn{
+  padding: 8px;
+  width: 100%;
+}
+.pro-item-img-cont{
+  aspect-ratio: 1/1;
+  max-width: 150px;
+}
+.pro-item-img{
+  aspect-ratio: 1/1;
+  width: 100%;
 }
