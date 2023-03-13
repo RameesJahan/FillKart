@@ -1,10 +1,29 @@
-import { getJsonData, goBack } from "./utils.js";
+import { getJsonData, goBack, addToCart, placeOrder , getUser} from "./utils.js";
+import { auth, onAuthStateChanged } from "./firebase.js";
 
-var products;
+var products,user;
 
 window.goBack = goBack;
 
+const btnAddCart = document.getElementById("btn-add-cart");
+const btnBuyNow = document.getElementById("btn-buy-now");
+
 window.addEventListener("load", function () {
+
+      //Get Current User
+  onAuthStateChanged(auth, (u) => {
+    if (u) {
+      // User is signed in
+      if (!u.emailVerified) window.location.href = "/pages/verify.html";
+      user = getUser(u.uid);
+      
+    } else {
+      // User is signed out
+      btnAddCart.onclick = () => window.location.href = "/pages/profile.html";
+      btnBuyNow.onclick = () => window.location.href = "/pages/profile.html";
+    }
+  });
+  
   /*Function to load products
 =========================================*/
   // Call the getJsonData function and log the JSON data to the console
@@ -31,7 +50,16 @@ window.addEventListener("load", function () {
       document.title = "Product Not Found";
       return;
     }
-
+    
+    btnAddCart.onclick = () => {
+      addToCart(user,id);
+      alert("Product added to cart");
+    };
+    btnBuyNow.onclick = () => {
+      placeOrder(user,id);
+      alert("Order Placed Successfully");
+    };
+    
     document.title = product.name;
     document.getElementById("product-name").innerHTML = product.name;
     document.getElementById("product-price").innerHTML = "₹" + product.price;

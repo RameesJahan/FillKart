@@ -262,8 +262,9 @@ a{
 
 .product-btn-buy:hover,
 .product-btn-add:hover{
-  color: var(--primary-white);
-  background-color: var(--primary-black);
+  box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.14) , 
+              0px 2px 8px 3px rgba(0,0,0,0.12) , 
+              0px 4px 6px -3px rgba(0,0,0,0.2) ;
 }
 
 .pro-not-found{
@@ -769,6 +770,11 @@ a{
 .pro-item-price{
   font-weight: 500;
 }
+.pro-item-qty{
+  font-size: 12px;
+  align-self: start;
+  padding: 4px 12px;
+}
 
 .pro-item-btn-cont{
   align-self: center;
@@ -776,7 +782,14 @@ a{
 .pro-item-btn{
   padding: 8px;
   width: 100%;
+  background: var(--primary-white);
 }
+.pro-item-btn:hover{
+  box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.14) , 
+              0px 2px 8px 3px rgba(0,0,0,0.12) , 
+              0px 4px 6px -3px rgba(0,0,0,0.2) ;
+}
+
 .pro-item-img-cont{
   aspect-ratio: 1/1;
   max-width: 150px;

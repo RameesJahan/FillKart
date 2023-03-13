@@ -14,14 +14,14 @@ const iptSearch = document.getElementById("ipt-search");
 iptSearch.focus();
 
 iptSearch.addEventListener("input", (e) => {
-  let data = search(e.target.value);
-  loadData(data);
+  search(e.target.value)
+    .then( data => loadData(data))
+    .catch(error => console.log(error));
 });
 
 window.addEventListener("load", () => {
   getJsonData("/data/products.json")
     .then((data) => {
-      console.log(data);
       products = data;
       loadCat();
       loadData(data);
@@ -48,7 +48,6 @@ const loadData = (data) => {
   noResultElem.style.display = data && data.length > 0 ? "none" : "flex";
   let proList = "";
   data.forEach((item) => {
-    console.log(item);
     let temp = `<a href="/pages/product.html?id=${item.id}">
                   <div class="search-item bottom-line" data-aos="slide-up">
                     <div class="srch-item-img-container">
@@ -70,7 +69,7 @@ const goToProduct = (id) => {
   window.location.href = "/pages/product.html?id=" + id;
 };
 
-const search = (keyword) => {
+/*const search = (keyword) => {
   const lowercaseKeyword = keyword.toLowerCase();
 
   const filteredArray = products.filter((obj) => {
@@ -80,7 +79,29 @@ const search = (keyword) => {
   });
 
   return filteredArray;
+};*/
+
+const search = (keyword) => {
+  return new Promise((resolve, reject) => {
+    const lowercaseKeyword = keyword.toLowerCase();
+
+    const filteredArray = products.filter((obj) => {
+      return Object.values(obj).some((value) => {
+        return String(value).toLowerCase().includes(lowercaseKeyword);
+      });
+    });
+
+    resolve(filteredArray);
+  });
 };
+
+const searchByCat = (cat) => {
+  return new Promise((resolve, reject) => {
+    let result = products.filter((item) => item.category === cat);
+    resolve(result);
+  });
+}
+
 
 function toggleRadio(element) {
   return function() {
@@ -90,6 +111,8 @@ function toggleRadio(element) {
     });
     element.classList.add("checked");
     
-    loadData(search(element.innerText));
+    searchByCat(element.innerText)
+      .then( data => loadData(data))
+      .catch(error => console.log(error));
   };
 }

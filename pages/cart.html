@@ -48,25 +48,12 @@
         <img class="header-back" src="/icons/ic_back.png" onclick="javascript: history.back()" />
         <span class="header-title">My Cart</span>
       </div>
-      <div class="empty-body">
+      <div class="empty-body" id="empty-cart">
         Your Cart is Empty!
       </div>
       <div class="pro-body">
-        <div class="pro-item-list">
-          <div class="pro-item row bottom-line">
-            <div class="pro-item-img-cont col-4">
-              <img class="pro-item-img" src="/images/shirt_1.jpg" alt="Product Name" />
-            </div>
-            <div class="pro-item-details col-6">
-              <span class="pro-item-name">Product Name</span>
-              <span class="pro-item-brand">Brand</span>
-              <span class="pro-item-price">₹39000</span>
-              <span class="pro-item-qty">Qty: 1pc</span>
-            </div>
-            <div class="pro-item-btn-cont col">
-              <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-item-btn"  value="Remove" />
-            </div>
-          </div>
+        <div class="pro-item-list" id="cart-list">
+          <!--Show Products Here-->
         </div>
       </div>
     </div>

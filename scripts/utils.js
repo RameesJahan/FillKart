@@ -97,7 +97,7 @@ const createUser = (id, name, email, photo = "/images/img_avatar.png") => {
   console.log(raw);
   let users = raw ? JSON.parse(raw) : [];
   let found = users.some((item) => item.id === id);
-  if(!found) users.push(user);
+  if (!found) users.push(user);
 
   window.localStorage.setItem("USERS", JSON.stringify(users));
 };
@@ -107,12 +107,44 @@ const getUser = (id) => {
   return users.find((item) => item.id === id);
 };
 
-const updateName = (user ,name) => {
+const updateName = (user, name) => {
   let users = JSON.parse(window.localStorage.getItem("USERS"));
   let index = users.findIndex((item) => item.id === user.uid);
   users[index].name = name;
   window.localStorage.setItem("USERS", JSON.stringify(users));
-}
+};
+
+const addToCart = (user, proId) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  let index = users.findIndex((item) => item.id === user.id);
+  users[index].cart.push(proId);
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
+
+const removeFromCart = (user, proId) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  let index = users.findIndex((item) => item.id === user.id);
+  users[index].cart = users[index].cart.filter((item) => {
+    return item != proId;
+  });
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
+
+const placeOrder = (user, proId) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  let index = users.findIndex((item) => item.id === user.id);
+  users[index].orders.push(proId);
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
+
+const cancelOrder = (user, proId) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  let index = users.findIndex((item) => item.id === user.id);
+  users[index].orders = users[index].orders.filter((item) => {
+    return item != proId;
+  });
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
 
 export {
   getJsonData,
@@ -125,5 +157,9 @@ export {
   checkPasswordStrength,
   createUser,
   getUser,
-  updateName
+  updateName,
+  addToCart,
+  removeFromCart,
+  placeOrder,
+  cancelOrder,
 };
