@@ -4,11 +4,24 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Profile</title>
 
@@ -30,11 +43,29 @@
     <div class="dialog-container" id="dialog-container">
       <div class="edt-name-dialog rounded border-line container">
         <h5 class="edt-name-title">Edit Name:</h5>
-        <input type="text" class="ipt-edit-name" name="ipt-edit-name" id="ipt-edit-name" placeholder="Enter Name" />
+        <input
+          type="text"
+          class="ipt-edit-name"
+          name="ipt-edit-name"
+          id="ipt-edit-name"
+          placeholder="Enter Name"
+        />
         <span id="edt-name-err-msg" class="error-msg">Enter Valid Email</span>
         <div class="row">
-          <input type="button" class="btn-edt-dia col rounded border-line" name="edt-name-cancel" id="edt-name-cancel" value="Cancel" />
-          <input type="button" class="btn-edt-dia col rounded border-line" name="edt-name-save" id="edt-name-save" value="Save" />
+          <input
+            type="button"
+            class="btn-edt-dia col rounded border-line"
+            name="edt-name-cancel"
+            id="edt-name-cancel"
+            value="Cancel"
+          />
+          <input
+            type="button"
+            class="btn-edt-dia col rounded border-line"
+            name="edt-name-save"
+            id="edt-name-save"
+            value="Save"
+          />
         </div>
       </div>
     </div>
@@ -63,28 +94,36 @@
               contenteditable="false"
             ></span>
             <span id="user-email" class="prof-user-email"></span>
-            <div id="btn-signin" class="btn-sign-in border-line rounded">Sign In</div>
+            <div id="btn-signin" class="btn-sign-in border-line rounded">
+              Sign In
+            </div>
           </div>
         </div>
-        <div class="user-info-edt-container row">
-          <div class="col-sm-6">
-            <div class="btn-edit-name rounded border-line" id="btn-edit-name">Edit Name</div>
+        <div class="user-info-edt-container row" id="use-edt-cont">
+          <div class="col-m-6 col-sm-4">
+            <div class="btn-edit-name rounded border-line" id="btn-edit-name">
+              Edit Name
+            </div>
           </div>
-          <div class="col-sm-6">
-            <div class="btn-edit-pass rounded border-line" id="btn-edit-pass">Change Password</div>
+          <div class="col-m-6 col-sm-4">
+            <div class="btn-edit-pass rounded border-line" id="btn-edit-pass">
+              Change Password
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="btn-dlt-usr rounded border-line" id="btn-dlt-usr">
+              Delete Account
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div class="opt-my-order bottom-line">
-          My Orders
-        </div>
-        <div class="opt-my-cart bottom-line">
-          My Cart
-        </div>
+        <div class="opt-my-order bottom-line" id="btn-my-orders">My Orders</div>
+        <div class="opt-my-cart bottom-line" id="btn-my-cart">My Cart</div>
       </div>
       <div class="copyright-section">
-        Develped by <a href="http://rameesjahan.github.io">Ramees Jahan</a><br />
+        Develped by <a href="http://rameesjahan.github.io">Ramees Jahan</a
+        ><br />
         <span>©copyright 2023</span>
       </div>
     </div>
@@ -95,11 +134,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-   
-    <script
-      src="/scripts/profile.js"
-      type="module"
-      charset="utf-8"
-    ></script>
+
+    <script src="/scripts/profile.js" type="module" charset="utf-8"></script>
   </body>
 </html>

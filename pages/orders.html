@@ -46,27 +46,14 @@
     <div class="container">
       <div class="body-header bottom-line">
         <img class="header-back" src="/icons/ic_back.png" onclick="javascript: history.back()" />
-        <span class="header-title">My Cart</span>
+        <span class="header-title">My Orders</span>
       </div>
-      <div class="empty-body" id="empty-cart">
-        Your Cart is Empty!
+      <div class="empty-body" id="empty-orders">
+        No Orders Found!
       </div>
       <div class="pro-body">
-        <div class="pro-item-list" id="order-list">
-          <div class="pro-item row bottom-line">
-                  <div class="pro-item-img-cont col-4">
-                    <img class="pro-item-img" src="/images/shirt_1.jpg" alt="${product.name}" />
-                  </div>
-                  <div class="pro-item-details col-6">
-                    <span class="pro-item-name">${product.name}</span>
-                    <span class="pro-item-brand">${product.brand}</span>
-                    <span class="pro-item-price">₹${product.price}</span>
-                    <span class="pro-item-qty border-line rounded">Qty: 1pc</span>
-                  </div>
-                  <div class="pro-item-btn-cont col">
-                    <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-cancel-btn"  value="Cancel Order" />
-                  </div>
-                </div>
+        <div class="pro-item-list" id="orders-list">
+          <!--Here List Of Orders-->
         </div>
       </div>
     </div>

@@ -3,9 +3,10 @@ import {
   signOut,
   onAuthStateChanged,
   updateProfile,
-  sendPasswordResetEmail
+  sendPasswordResetEmail,
+  deleteUser
 } from "./firebase.js";
-import { getUser, updateName, validateName } from "./utils.js";
+import { getUser, updateName, validateName , delUser} from "./utils.js";
 
 const btnSignIn = document.getElementById("btn-signin");
 const profPic = document.getElementById("prof-pic");
@@ -18,6 +19,23 @@ const errEdtName = document.getElementById("edt-name-err-msg");
 
 var user;
 
+const removeUser = (u) => {
+  
+  if (confirm("Are You Sure?") == true) {
+    deleteUser(u).then(() => {
+      // User deleted.
+      delUser(u.uid);
+      alert("Account Deleted!");
+      window.location.reload();
+    }).catch((error) => {
+      // An error ocurred
+      alert("An Error Occurred!")
+    });
+  } else {
+    console.log("Cancelled")
+  }
+};
+
 window.addEventListener("load", () => {
   const currentUser = auth.currentUser;
   btnSignIn.onclick = goToSignIn;
@@ -26,16 +44,30 @@ window.addEventListener("load", () => {
 
   //Get Current User
   onAuthStateChanged(auth, (u) => {
+    document.getElementById("use-edt-cont").style.display = u?"flex":"none";
     if (u) {
       // User is signed in
       if (!u.emailVerified) window.location.href = "/pages/verify.html";
 
       user = getUser(u.uid);
+      document.getElementById("btn-my-orders").onclick = () =>
+        (window.location.href = "/pages/orders.html");
+      document.getElementById("btn-my-cart").onclick = () =>
+        (window.location.href = "/pages/cart.html");
       main();
+      
+      document.getElementById('btn-dlt-usr').onclick = () => removeUser(u);
+      
     } else {
       // User is signed out
       console.log("User is signed out");
       btnSignIn.onclick = goToSignIn;
+      document.getElementById("btn-my-orders").onclick = () =>
+        alert("User Not Signed In");
+      document.getElementById("btn-my-cart").onclick = () =>
+        alert("User Not Signed In");
+      document.getElementById("btn-dlt-usr").onclick = () =>
+        alert("User Not Signed In");
     }
   });
 });
@@ -116,3 +148,5 @@ const changePass = () => {
       alert(error);
     });
 };
+
+

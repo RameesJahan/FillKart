@@ -114,6 +114,12 @@ const updateName = (user, name) => {
   window.localStorage.setItem("USERS", JSON.stringify(users));
 };
 
+const delUser = (id) => {
+  let users = JSON.parse(window.localStorage.getItem("USERS"));
+  users = users.filter((item) => item.id !== id);
+  window.localStorage.setItem("USERS", JSON.stringify(users));
+};
+
 const addToCart = (user, proId) => {
   let users = JSON.parse(window.localStorage.getItem("USERS"));
   let index = users.findIndex((item) => item.id === user.id);
@@ -124,9 +130,7 @@ const addToCart = (user, proId) => {
 const removeFromCart = (user, proId) => {
   let users = JSON.parse(window.localStorage.getItem("USERS"));
   let index = users.findIndex((item) => item.id === user.id);
-  users[index].cart = users[index].cart.filter((item) => {
-    return item != proId;
-  });
+  users[index].cart = removeAllItem(proId,users[index].cart);
   window.localStorage.setItem("USERS", JSON.stringify(users));
 };
 
@@ -140,11 +144,13 @@ const placeOrder = (user, proId) => {
 const cancelOrder = (user, proId) => {
   let users = JSON.parse(window.localStorage.getItem("USERS"));
   let index = users.findIndex((item) => item.id === user.id);
-  users[index].orders = users[index].orders.filter((item) => {
-    return item != proId;
-  });
+  users[index].orders = removeAllItem(proId,users[index].orders);
   window.localStorage.setItem("USERS", JSON.stringify(users));
 };
+
+function removeAllItem(value, array) {
+  return array.filter((item) => item !== value);
+}
 
 export {
   getJsonData,
@@ -162,4 +168,5 @@ export {
   removeFromCart,
   placeOrder,
   cancelOrder,
+  delUser
 };

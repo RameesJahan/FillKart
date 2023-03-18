@@ -1,7 +1,7 @@
-import { getUser, getJsonData, removeFromCart } from "./utils.js";
+import { getUser, getJsonData, cancelOrder } from "./utils.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
 
-var user, cart, products;
+var user, orders, products;
 
 getJsonData("/data/products.json")
   .then((data) => {
@@ -11,9 +11,9 @@ getJsonData("/data/products.json")
     console.error(error);
   });
 
-window.removeCartItem = (item) => {
-  removeFromCart(user, item);
-  alert("Product Removed From Cart");
+window.removeOrder = (item) => {
+  cancelOrder(user, item);
+  alert("Order Cancelled");
   window.location.reload();
 }; 
 
@@ -24,9 +24,9 @@ window.onload = () => {
       if (!u.emailVerified) window.location.href = "/pages/verify.html";
 
       user = getUser(u.uid);
-      cart = user.cart;
+      orders = user.orders;
 
-      loadCart(cart);
+      loadOrders(orders);
       console.log(user);
     } else {
       // User is signed out
@@ -36,34 +36,12 @@ window.onload = () => {
   });
 };
 
-const loadCart = (data) => {
-  document.getElementById("empty-cart").style.display =
+const loadOrders = (data) => {
+  document.getElementById("empty-orders").style.display =
     data && data.length > 0 ? "none" : "flex";
 
-  const cartList = document.getElementById("cart-list");
-
-  /*
-  data.forEach((item) => {
-    let product = products.find((obj) => obj.id === item);
-    let q = 0;
-    
-    let temp = `<div class="pro-item row bottom-line">
-                  <div class="pro-item-img-cont col-4">
-                    <img class="pro-item-img" src="${product.img}" alt="${product.name}" />
-                  </div>
-                  <div class="pro-item-details col-6">
-                    <span class="pro-item-name">${product.name}</span>
-                    <span class="pro-item-brand">${product.brand}</span>
-                    <span class="pro-item-price">₹${product.price}</span>
-                    <span class="pro-item-qty border-line rounded">Qty: ${q}pc</span>
-                  </div>
-                  <div class="pro-item-btn-cont col">
-                    <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-remove-btn"  value="Remove" />
-                  </div>
-                </div>`;
-    
-    cartList.innerHTML += temp;
-  });*/
+  const ordersList = document.getElementById("orders-list");
+  
   let countMap = new Map();
   
 
@@ -93,13 +71,11 @@ const loadCart = (data) => {
                     <span class="pro-item-qty border-line rounded">Qty: ${count} ${count > 1 ? "pcs" : "pc"}</span>
                   </div>
                   <div class="pro-item-btn-cont col">
-                    <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-remove-btn" value="Remove" 
-                           onclick="removeCartItem('${itemId}')"/>
+                    <input type="button" class="pro-item-btn rounded border-line" name="pro-item-btn" id="pro-remove-btn" value="Cancel Order" 
+                           onclick="removeOrder('${itemId}')"/>
                   </div>
                 </div>`;
 
-    cartList.innerHTML += temp;
+    ordersList.innerHTML += temp;
   });
 };
-
-
