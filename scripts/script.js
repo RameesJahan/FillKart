@@ -18,14 +18,14 @@ const cartBadge = document.getElementById("cart-badge");
 
 document.getElementById("ipt_search").onfocus = (e) => {
   e.preventDefault();
-  window.location.href = "/pages/search.html"
+  window.location.href = "../pages/search.html"
 }
 
 
 /*Function to go To Profile page
 =========================================*/
 window.goToUser = () => {
-  window.location.href = "/pages/profile.html";
+  window.location.href = "../pages/profile.html";
 };
 
 window.addEventListener("load", function () {
@@ -41,7 +41,7 @@ window.addEventListener("load", function () {
       
     } else {
       // User is signed out
-      userPic.src = "/images/img_avatar.png";
+      userPic.src = "../images/img_avatar.png";
       cartBadge.classList.add("hide");
       fabCart.onclick = () => { alert("User Not Signed In")};
     }
@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
   /*Function to load products
   =========================================*/
   // Call the getJsonData function and log the JSON data to the console
-  getJsonData("/data/products.json")
+  getJsonData("../data/products.json")
     .then((data) => {
       console.log(data);
       products = data;
@@ -83,7 +83,7 @@ window.addEventListener("load", function () {
     let result = products.filter((item) => item.category === i);
     if (result == undefined) return;
     result.forEach((item) => {
-      let proTemp = `<a href="/pages/product.html?id=${item.id}">
+      let proTemp = `<a href="./pages/product.html?id=${item.id}">
                       <div class="pro-card border-line" data-aos="fade-left">
                         <img class="pro-card-img" 
                              src="${item.img}" 
@@ -102,7 +102,7 @@ window.addEventListener("load", function () {
 
 const main = () => {
   console.log(user)
-  fabCart.onclick = () => window.location.href = "/pages/cart.html";
+  fabCart.onclick = () => window.location.href = "../pages/cart.html";
   
   //Cart Badge
   if (user.cart.length === 0) {
